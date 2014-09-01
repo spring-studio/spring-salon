@@ -28,7 +28,7 @@
 .navigationLinks {
 	width: 80%;
 	height: 100%;
-	position: absolute;
+	position: fixed;
 	bottom: 0;
 	background-color: green;
 	transform: translate3d(-100%,0,0);
@@ -57,6 +57,7 @@
 		width: 100%;
 		background-color: grey;
 		height: 8em;
+		position: fixed;
 	}
 
 	.navigationLogoHeader {
@@ -103,3 +104,5 @@
 	}
 
 }
+
+
