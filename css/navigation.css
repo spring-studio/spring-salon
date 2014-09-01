@@ -1,41 +1,41 @@
 .navigationBar {
-	width: auto;
+	width: 	auto;
 	height: auto;
 }
 
 .navigationLogoHeader{
-	width: 100%;
+	width: 	100%;
 	height: 4em;
-	text-align: center;
-	background-color: red;
-	position: fixed;
+	text-align: 	center;
+	background-color:  red;
+	position:  fixed;
 
 }
 
-.contactBox{display: none;}
+.contactBox { display: none; }
 
 .logoBox {
-	width: 100%;
+	width: 	100%;
 	height: 100%;
 	background-color: yellow;
 }
 .logoBox img {
 	height: 100%;
-	width: auto;
+	width: 	auto;
 
 }
 
 .navigationLinks {
-	width: 80%;
-	height: 100%;
+	width: 	  80%;
+	height:   100%;
 	position: fixed;
-	bottom: 0;
+	bottom:	  0;
 	background-color: green;
 	transform: translate3d(-100%,0,0);
 	-webkit-transform: translate3d(-100%,0,0);
 	transition: transform 400ms ease;
 	-webkit-transition: -webkit-transform 400ms ease;
-	z-index: 10;
+	z-index:  10;
 }
 
 .transitonNavigationLinks {
@@ -45,8 +45,8 @@
 
 
 .navigationLinks a {
-		font-size: 1.56em;
-		text-decoration: none;
+		font-size: 		1.56em;
+		text-decoration:  none;
 		color: #000;
 }
 
@@ -54,28 +54,21 @@
 
 @media all and (min-width: 750px){
 	.navigationBar {
-		width: 100%;
+		width:    100%;
 		background-color: grey;
-		height: 8em;
+		height:   8em;
 		position: fixed;
 	}
 
-	.navigationLogoHeader {
-		width: 100%;
-		height: 4em;
-		background-color: blue;
-	}
-
 	.logoBox {
-		width: 50%;
+		width:  50%;
 		height: 100%;
-		float: left;
+		float:  left;
 	}
 
 	
 	.contactBox {
-		width: 50%;
-		height: 100%;
+		width: 	50%;
 		float:right;
 		background-color: tomato;
 		display: inline-block;
@@ -86,16 +79,16 @@
 		height: 4em;
 		background-color: green;
 		text-align: center;
-		line-height:4em;
+		line-height:   4em;
 		transform: translate3d(0,4em,0);
-		position: static;
+		position: 	static;
 	}
 
 	
 
 	.navigationLinks li{
 		display: inline-block;
-		margin-right: 2em;
+		margin-right: 	  2em;
 	}
 
 
