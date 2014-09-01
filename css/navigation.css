@@ -1,0 +1,57 @@
+.navigationBar {
+	width: 100%;
+	background-color: grey;
+	position: fixed;
+	height: 8em;
+}
+
+.navigationLogoHeader {
+	width: 100%;
+	height: 4em;
+	background-color: blue;
+	text-align: center;
+}
+
+.logoBox {
+	width: 50%;
+	height: 100%;
+	float: left;
+	background-color: yellow;
+}
+
+.logoBox img {
+	height: 100%;
+	width: auto;
+}
+
+.contactBox {
+	width: 50%;
+	height: 100%;
+	float:right;
+	background-color: tomato;
+}
+
+.navigationLinks {
+	width: 100%;
+	height: 4em;
+	background-color: green;
+	text-align: center;
+	line-height:4em;
+}
+
+.navigationLinks a {
+	font-size: 1.56em;
+	text-decoration: none;
+	color: #fff;
+}
+
+.navigationLinks li{
+	display: inline-block;
+	margin-right: 2em;
+}
+
+
+.navigationLinks li:last-child {
+	margin-right: 0;
+}
+
