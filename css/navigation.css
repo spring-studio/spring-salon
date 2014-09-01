@@ -1,57 +1,102 @@
 .navigationBar {
-	width: 100%;
-	background-color: grey;
-	position: fixed;
-	height: 8em;
+	width: auto;
+	height: auto;
 }
 
-.navigationLogoHeader {
+.navigationLogoHeader{
 	width: 100%;
 	height: 4em;
-	background-color: blue;
 	text-align: center;
+	background-color: red;
+	position: fixed;
+
 }
+
+.contactBox{display: none;}
 
 .logoBox {
-	width: 50%;
+	width: 100%;
 	height: 100%;
-	float: left;
 	background-color: yellow;
 }
-
 .logoBox img {
 	height: 100%;
 	width: auto;
-}
 
-.contactBox {
-	width: 50%;
-	height: 100%;
-	float:right;
-	background-color: tomato;
 }
 
 .navigationLinks {
-	width: 100%;
-	height: 4em;
+	width: 80%;
+	height: 100%;
+	position: absolute;
+	bottom: 0;
 	background-color: green;
-	text-align: center;
-	line-height:4em;
+	transform: translate3d(-100%,0,0);
+	transition: transform 400ms ease;
+	z-index: 10;
 }
+
+.transitonNavigationLinks {
+	transform: translate3d(0,0,0);
+}
+
 
 .navigationLinks a {
-	font-size: 1.56em;
-	text-decoration: none;
-	color: #fff;
-}
-
-.navigationLinks li{
-	display: inline-block;
-	margin-right: 2em;
+		font-size: 1.56em;
+		text-decoration: none;
+		color: #000;
 }
 
 
-.navigationLinks li:last-child {
-	margin-right: 0;
-}
 
+@media all and (min-width: 750px){
+	.navigationBar {
+		width: 100%;
+		background-color: grey;
+		height: 8em;
+	}
+
+	.navigationLogoHeader {
+		width: 100%;
+		height: 4em;
+		background-color: blue;
+	}
+
+	.logoBox {
+		width: 50%;
+		height: 100%;
+		float: left;
+	}
+
+	
+	.contactBox {
+		width: 50%;
+		height: 100%;
+		float:right;
+		background-color: tomato;
+		display: inline-block;
+	}
+
+	.navigationLinks {
+		width: 100%;
+		height: 4em;
+		background-color: green;
+		text-align: center;
+		line-height:4em;
+		transform: translate3d(0,4em,0);
+		position: static;
+	}
+
+	
+
+	.navigationLinks li{
+		display: inline-block;
+		margin-right: 2em;
+	}
+
+
+	.navigationLinks li:last-child {
+		margin-right: 0;
+	}
+
+}
