@@ -53,13 +53,16 @@
 .navigationLinks li:first-child {
 	margin-top: 0.5em;
 }
-.navigationLinks a {
+.navigationLinks a, .navigationLinks a:link, .navigationLinks a:visited{
 		font-size: 		1.56em;
 		text-decoration:  none;
-		color: #000;
+		color: rgba(0,0,0,0.7);
 }
 
-.navigationLinks li:hover{
+.navigationLinks a:hover, .navigationLinks a:active, .navigationLinks a:focus {
+	color: rgba(0,0,0,1);
+}
+.navigationLinks li:hover, .navigationLinks li:active, .navigationLinks li:focus{
 	background-color: rgba(0, 0, 0, 0.1);
 	border-bottom: 1px solid rgba(0, 0, 0, 0);
 
