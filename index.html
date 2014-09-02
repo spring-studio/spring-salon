@@ -13,7 +13,9 @@
 
 	<nav class="navigationBar">
 			<div class="navigationLogoHeader">
-				<div class="logoBox"><img src="images/logo.png"></div>
+				<div class="logoBox">
+					<img src="images/logo.png" class="logoImg"></div>
+				<div class="menuImg"><img src="images/menu.svg" class="menuImg" id="menuImg"></div>
 				<div class="contactBox">BLAH BLAH</div>
 			</div>
 			<ul class="navigationLinks">
@@ -34,7 +36,7 @@
 		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 	</content>
 <script type="text/javascript">
-	$('.navigationLogoHeader').click(function(){
+	$('#menuImg').click(function(){
 
 	  $('.navigationLinks').toggleClass('transitonNavigationLinks');
 	

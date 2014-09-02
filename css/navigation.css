@@ -23,13 +23,14 @@
 	width: 	auto;
 }
 
+.menuImg { float: right; margin-top: -1.6em; height: 2.5em; margin-right: 0.5em; z-index: 10;}
 .navigationLinks {
 	width: 	  80%;
 	height:   100%;
 	position: fixed;
 	bottom:	  0;
 	background-image: url(../images/bg_texture3.jpg);
-	*transform: translate3d(-100%,0,0);
+	transform: translate3d(-100%,0,0);
 	-webkit-transform: translate3d(-100%,0,0);
 	transition: transform 400ms ease;
 	-webkit-transition: -webkit-transform 400ms ease;
