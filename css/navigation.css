@@ -74,8 +74,7 @@
 @media all and (min-width: 750px){
 	.navigationBar {
 		width:    100%;
-		background-color: grey;
-		height:   8em;
+		height:   10em;
 		position: fixed;
 	}
 
@@ -89,18 +88,31 @@
 	.contactBox {
 		width: 	50%;
 		float:right;
-		background-color: tomato;
+		background-color: #fff;
 		display: inline-block;
+	}
+
+	.navigationLogoHeader {		
+		background-color: #fff;
+		height: 6em;
+}
+	.menuimg {
+		display: none;
 	}
 
 	.navigationLinks {
 		width: 100%;
 		height: 4em;
-		background-color: green;
+		background-color: #008000;
 		text-align: center;
-		line-height:   4em;
-		transform: translate3d(0,4em,0);
+		line-height: 4em;
+		transform: translate3d(0px, 6em, 0px);
 		bottom: unset;
+		background-image: none;
+		transition: none;
+		box-shadow: none;
+		background-color: rgba(255,255,255,0.9);
+		box-shadow: 0 1px 5px #aaa;
 		
 	}
 
@@ -108,13 +120,27 @@
 
 	.navigationLinks li{
 		display: inline-block;
-		margin-right: 	  2em;
+		margin-right: 4em;
+		width: auto;
+		height: auto;
+		border: medium none;
+		text-indent: unset;
+		line-height: 4em;
+		background-color: rgb
 	}
 
-
+	.navigationLinks li:first-child {
+		margin-top: 0;
+	}
 	.navigationLinks li:last-child {
 		margin-right: 0;
 	}
+
+	.navigationLinks li:hover, .navigationLinks li:active, .navigationLinks li:focus{
+	background-color: transparent;
+	border-bottom: unset;
+
+}
 
 }
 
