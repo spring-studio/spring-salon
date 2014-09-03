@@ -17,11 +17,31 @@
 					<img src="images/logo2.jpg" class="logoImg"></div>
 				<div class="menuImg"><img src="images/menu.svg" class="menuImg" id="menuImg"></div>
 				<div class="contactBox">Tel: 098 985 17 00<br/>E-mail: salon@gmail.com</div>
+				<div class="clear"></div>
 			</div>
 			<ul class="navigationLinks">
 				<li class="link"><a href="#">Što nudimo?</a></li>
-				<li class="link"><a href="#">Tretmani</a></li>
-				<li class="link"><a href="#">Wellness dan</a></li>
+				<li class="link">
+					<a href="#">Tretmani </a> <img src="images/arrow2.svg" class="arrow">
+					<ul class="subMenu">
+						<li><a href="#">Njega stopala</a></li>
+						<li><a href="#">Njega ruku</a></li>
+						<li><a href="#">Masaže</a></li>
+						<li><a href="#">Termo deka</a></li>
+						<li><a href="#">Depilacije - žene</a></li>
+						<li><a href="#">Depilacije - muškarci</a></li>
+						<li><a href="#">Lice</a></li>
+						<li><a href="#">Njega leđa</a></li>
+					</ul>
+				</li>
+				<li class="link"><a href="#">Wellness dan</a>
+					<img src="images/arrow2.svg" class="arrow2">
+					<ul class="subMenu2">
+						<li><a href="#">Standard</a></li>
+						<li><a href="#">Exclusive</a></li>
+						<li><a href="#">Rođendan</a></li>
+					</ul>
+				</li>
 				<li class="link"><a href="#">O nama</a></li>
 				<li class="link"><a href="#">Kontakt</a></li>
 			</ul>
@@ -40,6 +60,16 @@
 
 	  $('.navigationLinks').toggleClass('transitonNavigationLinks');
 	
+	});
+
+	$('.arrow').click(function() {
+		$('.subMenu').toggleClass('transitionSubMenu');
+		$('.arrow').toggleClass('transitionArrow');
+	});
+
+	$('.arrow2').click(function() {
+		$('.subMenu2').toggleClass('transitionSubMenu');
+		$('.arrow2').toggleClass('transitionArrow');
 	});
 </script>
 
