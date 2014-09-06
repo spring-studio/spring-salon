@@ -24,7 +24,12 @@
 	text-transform: uppercase;
 }
 
-.tretmaniList a:hover, .tretmaniList a:active, .tretmaniList a:focus  {
+.tretmaniList a:hover,   {
+	color: #c092c3;
+}
+
+.tretmaniList a:active, .tretmaniList a:focus{
+	transition:none;
 	color: #c092c3;
 }
 
