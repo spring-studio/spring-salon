@@ -53,8 +53,13 @@
 	margin: auto;
 }
 
-.imgBox:hover, .imgBox:active, .imgBox:focus {
+.imgBox:hover {
 	border: 2px solid #c092c3;
+}
+
+.imgBox:active, .imgBox:focus {
+	border: 2px solid #c092c3;
+	transition:none;
 }
 
 @media all and (min-width: 750px) {
