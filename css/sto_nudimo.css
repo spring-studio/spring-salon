@@ -8,12 +8,23 @@
 
 .tretmaniList li {
 	display: inline-block;
-	width: 10em;
+	width: 11em;
 	margin-bottom: 2em;
 }
 
 .tretmaniList li:last-child {
 	margin-right: none;
+}
+
+.tretmaniList a {
+	color: #000;
+	text-decoration: none;
+	transition: color 250ms ease;
+	text-transform: uppercase;
+}
+
+.tretmaniList a:hover {
+	color: #c092c3;
 }
 
 .tretmaniList figure {
@@ -23,6 +34,7 @@
 
 .tretmaniList figcaption {
 	text-align: center;
+	margin-top: 1em;
 }
 
 .imgBox {
@@ -44,10 +56,13 @@
 		max-width: 85em;
 	}
 
-	.tretmaniList li {
-		width: 10em;
-		height: 10em;
+	.tretmaniList li{
 		margin-right: 3em;
 		margin-bottom: 3em;
+	}
+
+	.imgBox {
+		width: 10em;
+		height: 10em;
 	}
 }
