@@ -16,14 +16,15 @@
 	margin-right: none;
 }
 
-.tretmaniList a {
+.tretmaniList a, .tretmaniList a:visited, .tretmaniList a:link {
 	color: #000;
 	text-decoration: none;
 	transition: color 250ms ease;
+	-webkit-transition:border 250ms ease;
 	text-transform: uppercase;
 }
 
-.tretmaniList a:hover {
+.tretmaniList a:hover, .tretmaniList a:active, .tretmaniList a:focus  {
 	color: #c092c3;
 }
 
@@ -43,10 +44,11 @@
 	width: 6em;
 	height: 6em;
 	transition:border 250ms ease;
+	-webkit-transition:border 250ms ease;
 	margin: auto;
 }
 
-.imgBox:hover {
+.imgBox:hover, .imgBox:active, .imgBox:focus {
 	border: 2px solid #c092c3;
 }
 
