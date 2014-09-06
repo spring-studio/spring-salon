@@ -20,11 +20,11 @@
 	color: #000;
 	text-decoration: none;
 	transition: color 250ms ease;
-	-webkit-transition:border 250ms ease;
+	-webkit-transition: color 250ms ease;
 	text-transform: uppercase;
 }
 
-.tretmaniList a:hover,   {
+.tretmaniList a:hover {
 	color: #c092c3;
 }
 
