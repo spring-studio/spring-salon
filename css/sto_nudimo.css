@@ -1,5 +1,5 @@
 .tretmaniList {
-	max-width: 85em;
+	max-width: 85%;
 	margin: auto;
 	display: border-box;
 	padding-top: 8em;
@@ -9,11 +9,11 @@
 .tretmaniList li {
 	border: 2px solid rgba(0,0,0,0.5);
 	border-radius: 25px;
-	width: 10em;
-	height: 10em;
+	width: 6em;
+	height: 6em;
 	display: inline-block;
-	margin-right: 3em;
-	margin-bottom: 3em;
+	margin-right: 1em;
+	margin-bottom: 2em;
 	transition:border 250ms ease;
 }
 
@@ -27,6 +27,14 @@
 
 @media all and (min-width: 750px) {
 	.tretmaniList {
-		padding-top: 15em;s
+		padding-top: 15em;
+		max-width: 85em;
+	}
+
+	.tretmaniList li {
+		width: 10em;
+		height: 10em;
+		margin-right: 3em;
+		margin-bottom: 3em;
 	}
 }
