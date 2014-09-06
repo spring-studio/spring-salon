@@ -7,21 +7,34 @@
 }
 
 .tretmaniList li {
-	border: 2px solid rgba(0,0,0,0.5);
-	border-radius: 25px;
-	width: 6em;
-	height: 6em;
 	display: inline-block;
-	margin-right: 1em;
+	width: 10em;
 	margin-bottom: 2em;
-	transition:border 250ms ease;
 }
 
 .tretmaniList li:last-child {
 	margin-right: none;
 }
 
-.tretmaniList li:hover {
+.tretmaniList figure {
+	width: auto;
+	height: auto;
+}
+
+.tretmaniList figcaption {
+	text-align: center;
+}
+
+.imgBox {
+	border: 2px solid rgba(0,0,0,0.5);
+	border-radius: 25px;
+	width: 6em;
+	height: 6em;
+	transition:border 250ms ease;
+	margin: auto;
+}
+
+.imgBox:hover {
 	border: 2px solid #c092c3;
 }
 
