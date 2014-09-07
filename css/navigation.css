@@ -193,7 +193,7 @@
 		margin-top: 1em;	
 	}
 
-	.subMenu li, .subMenu li:active, .subMenu2 li, .subMenu2 li:hover{
+	.subMenu li, .subMenu2 li{
 		border:none;
 	}
 
