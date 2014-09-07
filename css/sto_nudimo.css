@@ -1,9 +1,18 @@
 .tretmaniList {
 	max-width: 85%;
 	margin: auto;
-	display: border-box;
 	padding-top: 8em;
 	text-align: center;
+}
+
+.tretmaniList h1 {
+	font-weight: normal;
+	text-transform: uppercase;
+	border-bottom: 1px solid #DDD;
+	padding-bottom: 0.5em;
+	margin: 0px auto 2em;
+	max-width: 20em;
+	color: #A1A1A1;
 }
 
 .tretmaniList li {
@@ -12,11 +21,11 @@
 	margin-bottom: 2em;
 }
 
-.tretmaniList li:last-child {
+.tretmaniList li:last-child, .wellnessList li:last-child {
 	margin-right: none;
 }
 
-.tretmaniList a, .tretmaniList a:visited, .tretmaniList a:link {
+.tretmaniList a, .tretmaniList a:visited, .tretmaniList a:link, .wellnessList a, .wellnessList a:visited, .wellnessList a:link{
 	color: #000;
 	text-decoration: none;
 	transition: color 250ms ease;
@@ -24,27 +33,27 @@
 	text-transform: uppercase;
 }
 
-.tretmaniList a:hover {
+.tretmaniList a:hover, .wellnessList a:hover{
 	color: #c092c3;
 }
 
-.tretmaniList a:active, .tretmaniList a:focus{
+.tretmaniList a:active, .tretmaniList a:focus, .wellnessList a:active, .wellnessList a:focus{
 	transition:none;
 	color: #c092c3;
 }
 
-.tretmaniList figure {
+.tretmaniList figure, .wellnessList figure {
 	width: auto;
 	height: auto;
 }
 
-.tretmaniList figcaption {
+.tretmaniList figcaption, .wellnessList figcaption {
 	text-align: center;
 	margin-top: 1em;
 }
 
 .imgBox {
-	border: 2px solid rgba(0,0,0,0.5);
+	border: 1px solid rgba(0,0,0,0.5);
 	border-radius: 25px;
 	width: 6em;
 	height: 6em;
@@ -53,13 +62,49 @@
 	margin: auto;
 }
 
-.imgBox:hover {
-	border: 2px solid #c092c3;
+.imgBox:hover, .wellnessImgBox:hover {
+	border: 1px solid #c092c3;
 }
 
-.imgBox:active, .imgBox:focus {
-	border: 2px solid #c092c3;
+.imgBox:active, .imgBox:focus, .wellnessImgBox:active, .wellnessImgBox:focus {
+	border: 1px solid #c092c3;
 	transition:none;
+}
+
+.wellnessList{
+	max-width: 85%;
+	margin: 3em auto 0 auto;
+	text-align: center;
+	list-style: none;
+}
+
+
+
+.wellnessList h1 {
+	font-weight: normal;
+	text-transform: uppercase;
+	border-bottom: 1px solid #DDD;
+	padding-bottom: 0.5em;
+	margin: 0px auto 2em;
+	max-width: 20em;
+	color: #A1A1A1;
+}
+
+.wellnessList li{
+	display: inline-block;
+	width: 15em;
+	margin-bottom: 2em;
+
+}
+
+.wellnessImgBox {
+	border: 1px solid rgba(0,0,0,0.5);
+	border-radius: 100px;
+	width: 10em;
+	height: 10em;
+	transition:border 250ms ease;
+	-webkit-transition:border 250ms ease;
+	margin: auto;
 }
 
 @media all and (min-width: 750px) {
@@ -69,12 +114,25 @@
 	}
 
 	.tretmaniList li{
-		margin-right: 3em;
+		width: 13em;
 		margin-bottom: 3em;
 	}
 
 	.imgBox {
 		width: 10em;
 		height: 10em;
+	}
+
+	.wellnessList {
+		max-width: 85em;
+	}
+
+	.wellnessImgBox {
+		width: 13em;
+		height: 13em;
+	}
+
+	.wellnessList li {
+		width: 23em;
 	}
 }
