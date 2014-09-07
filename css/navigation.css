@@ -145,13 +145,16 @@
 		height: auto;
 		text-align: center;
 		line-height: 4em;
-		bottom: unset;
+		bottom: initial;
+		bottom:auto;
 		background-image: none;
 		transition: none;
+		-webkit-transition: none;
 		background-color: rgba(255,255,255,1);
 		box-shadow: none;
 		overflow-y:hidden;
 		transform:none;
+		-webkit-transform:none;
 		margin-top: 6em;
 		border-bottom: 1px solid #c092c3;
 	}
@@ -162,7 +165,7 @@
 		width: auto;
 		height: auto;
 		border: none;
-		text-indent: unset;
+		text-indent: initial;
 		line-height: 4em;
 	}
 
@@ -175,7 +178,7 @@
 
 	.link:hover, .link:active, .link:focus{
 		background-color: transparent;
-		border-bottom: unset;
+		border-bottom: initial;
 	}
 
 	.subMenu, .subMenu2{
