@@ -21,7 +21,7 @@
 				<div class="clear"></div>
 			</div>
 			<ul class="navigationLinks">
-				<li class="link"><a href="#">Što nudimo?</a></li>
+				<li class="link"><a href="../index.html">Što nudimo?</a></li>
 				<li class="link">
 					<a href="#">Tretmani </a> <img src="../images/arrow2.svg" class="arrow">
 					<ul class="subMenu">
@@ -52,7 +52,7 @@
 	<content class="content">
 		<div class="tretmanDescription">
 			<h1>Njega stopala</h1>
-			<div class="descriptionImgBox"></div>
+			<div class="blah"><div class="descriptionImgBox"></div></div>
 			<div class="descriptionText">
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -64,38 +64,58 @@
 		</div></div>
 		<div class="clear"></div>
 		<div class="priceList">
-			<table>
-				<tr>
-					<td class="firstRow">Tretman</td>
-					<td class="firstRow">Cijena</td>
-				</tr>
-				<tr>
-					<td>Spa pedikura</td>
-					<td>100,00 kn</td>
-				</tr>
-				<tr>
-					<td>Spa pedikura + masaža</td>
-					<td>150,00 kn</td>
-				</tr>
-				<tr>
-					<td>Lakiranje</td>
-					<td>20,00 kn</td>
-				</tr>
-				<tr>
-					<td>Medicinska pedikura</td>
-					<td>300,00 kn</td>
-				</tr>
-				<tr>
-					<td>Medicinska pedikura + masaža</td>
-					<td>350,00 kn</td>
-				</tr>
-				<tr>
-					<td>Geliranje noktiju na nogama</td>
-					<td>150,00 kn</td>
-				</tr>
+			<table cellpadding="0" cellspacing="0">
+				<thead>
+					<tr>
+						<td>Tretman</td>
+						<td>Cijena</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Lakiranje</td>
+						<td> 20,00 kn</td>
+					</tr>
+					<tr>
+						<td>Spa pedikura</td>
+						<td>100,00 kn</td>	
+					</tr>
+					<tr>
+						<td>Spa pedikura + masaža</td>
+						<td> 150,00 kn</td>
+					</tr>
+					<tr>
+						<td>Geliranje noktiju na nogama</td>
+						<td> 150,00 kn</td>
+					</tr>					
+					<tr>
+						<td>Medicinska pedikura</td>
+						<td> 300,00 kn</td>
+					</tr>
+					<tr>
+						<td>Medicinska pedikura + masaža</td>
+						<td> 350,00 kn</td>
+					</tr>
+				</tbody>
 			</table>
 		</div>
 	</content>
+<script type="text/javascript">
+	$('#menuImg').click(function(){
 
+	  $('.navigationLinks').toggleClass('transitonNavigationLinks');
+	
+	});
+
+	$('.arrow').click(function() {
+		$('.subMenu').toggleClass('transitionSubMenu');
+		$('.arrow').toggleClass('transitionArrow');
+	});
+
+	$('.arrow2').click(function() {
+		$('.subMenu2').toggleClass('transitionSubMenu');
+		$('.arrow2').toggleClass('transitionArrow');
+	});
+</script>
 </body>
 </html>

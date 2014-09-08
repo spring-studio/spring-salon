@@ -1,7 +1,7 @@
 .tretmaniList {
 	max-width: 85%;
 	margin: auto;
-	padding-top: 8em;
+	padding-top: 6em;
 	text-align: center;
 }
 
@@ -28,8 +28,8 @@
 .tretmaniList a, .tretmaniList a:visited, .tretmaniList a:link, .wellnessList a, .wellnessList a:visited, .wellnessList a:link{
 	color: #000;
 	text-decoration: none;
-	transition: color 250ms ease;
-	-webkit-transition: color 250ms ease;
+	transition: color 200ms ease;
+	-webkit-transition: color 200ms ease;
 	text-transform: uppercase;
 }
 
@@ -52,8 +52,13 @@
 	margin-top: 1em;
 }
 
+/*.tretmaniList figure:hover > .imgBox{
+	border: 1px solid #c092c3;
+	color: #c092c3;
+}*/
+
 .imgBox {
-	border: 1px solid rgba(0,0,0,0.5);
+	border: 1px solid #7F7F7F;
 	border-radius: 25px;
 	width: 6em;
 	height: 6em;
@@ -78,8 +83,6 @@
 	list-style: none;
 }
 
-
-
 .wellnessList h1 {
 	font-weight: normal;
 	text-transform: uppercase;
@@ -98,7 +101,7 @@
 }
 
 .wellnessImgBox {
-	border: 1px solid rgba(0,0,0,0.5);
+	border: 1px solid #7F7F7F;
 	border-radius: 100px;
 	width: 10em;
 	height: 10em;
@@ -107,9 +110,21 @@
 	margin: auto;
 }
 
+.feet {
+	background: url('../images/feet.svg') no-repeat;
+	background-size: cover;
+	-webki-transition:background 250ms ease;
+		   transition:background 250ms ease;
+}
+
+.feet:hover, .feet:focus, .feet:active {
+	background: url('../images/feet_hover.svg') no-repeat;
+	background-size: cover;
+}
+
 @media all and (min-width: 750px) {
 	.tretmaniList {
-		padding-top: 15em;
+		padding-top: 13em;
 		max-width: 85em;
 	}
 

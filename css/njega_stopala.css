@@ -1,8 +1,10 @@
 .tretmanDescription {
 	width: 85%;
 	margin: auto;
-	padding-top: 8em;
+	padding-top: 6em;
 }
+
+.blah {z-index: -1000;}
 
 .descriptionImgBox {
 	margin: 2em auto 0px auto;
@@ -64,38 +66,57 @@
 }
 
 .priceList {
-	width: 85%;
+	width: 78%;
 	margin: 4em auto;
 }
 
 .priceList table {
 	margin: auto;
-	width: 90%;
+	width: 100%;
+	border: 1px solid #EAEAEA;
 }
 
-.priceList table tr td:first-child {
-	max-width: 70%;
-}
-
-.priceList table tr td:last-child{
-	max-width: 30%;
-}
-
-.priceList table tr:nth-child(odd) {
-	background-color: grey;
-}
-
-.firstRow {
-	padding: 0.4em;
+.priceList table thead {
 	color: #fff;
 	background-color: #C092C3;
 	font-size: 1.4em;
+	text-transform: uppercase;
+}
+
+.priceList table thead tr td:last-child {
+	text-align: center;
+}
+
+.priceList table tbody tr td {
+	text-indent: 0.3em;
+	border-top: 1px solid #EAEAEA;
+}
+
+.priceList table tbody tr td:first-child {
+	max-width: 70%;
+}
+
+.priceList table tbody tr td:last-child{
+	max-width: 30%;
+	text-align: center;
+}
+
+.priceList table tbody tr:nth-child(even) {
+	background-color: #F7F7F7;
+}
+
+.priceList table tbody tr:hover {
+	background-color: #EAEAEA;
+}
+
+.priceList table tr td {
+	padding: 0.5em;
 }
 
 
 @media all and (min-width: 750px) {
 	.tretmanDescription {
-		padding-top: 15em;
+		padding-top: 13em;
 		max-width: 75em;
 	}
 
@@ -108,6 +129,11 @@
 	.descriptionText {
 		float: right;
 		width: 45%;
+	}
+
+	.priceList {
+		max-width: 75em;
+		width: 85%;
 	}
 }
 

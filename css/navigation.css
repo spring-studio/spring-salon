@@ -9,7 +9,8 @@
 	text-align: center;
 	position:   fixed;
 	background-color: rgba(255,255,255,1);
-	box-shadow: 0 1px 5px #ddd;
+	border-bottom: 1px solid #c092c3;
+	z-index: 10;
 }
 
 .contactBox { display: none; }
@@ -43,7 +44,8 @@
 	-webkit-transform: translate3d(-100%,0,0);
 	transition: transform 400ms ease;
 	-webkit-transition: -webkit-transform 400ms ease;
-	box-shadow:  inset -1.5em 0px 2em -1.5em rgba(0, 0, 0, 0.15)
+	box-shadow:  inset -1.5em 0px 2em -1.5em rgba(0, 0, 0, 0.15);
+	z-index: 10;
 }
 
 .transitonNavigationLinks {
@@ -193,7 +195,7 @@
 		margin-top: 1em;	
 	}
 
-	.subMenu li, .subMenu2 li{
+	.subMenu li, .subMenu2 li, .subMenu li:active, .subMenu2 li:active{
 		border:none;
 	}
 
