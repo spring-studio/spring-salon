@@ -4,8 +4,6 @@
 	padding-top: 6em;
 }
 
-.blah {z-index: -1000;}
-
 .descriptionImgBox {
 	margin: 2em auto 0px auto;
 	background: url('../images/stopalo.jpg') no-repeat 20% 100% transparent;
@@ -116,8 +114,9 @@
 
 @media all and (min-width: 750px) {
 	.tretmanDescription {
-		padding-top: 13em;
+		padding-top:0;
 		max-width: 75em;
+		margin-top: 2.5em;
 	}
 
 	.descriptionImgBox {

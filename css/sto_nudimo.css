@@ -52,11 +52,6 @@
 	margin-top: 1em;
 }
 
-/*.tretmaniList figure:hover > .imgBox{
-	border: 1px solid #c092c3;
-	color: #c092c3;
-}*/
-
 .imgBox {
 	border: 1px solid #7F7F7F;
 	border-radius: 25px;
@@ -124,8 +119,9 @@
 
 @media all and (min-width: 750px) {
 	.tretmaniList {
-		padding-top: 13em;
+		padding-top: 0;
 		max-width: 85em;
+		margin-top: 2.5em;
 	}
 
 	.tretmaniList li{
@@ -137,7 +133,7 @@
 		width: 10em;
 		height: 10em;
 	}
-
+	
 	.wellnessList {
 		max-width: 85em;
 	}
