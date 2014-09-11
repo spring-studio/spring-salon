@@ -17,14 +17,33 @@ function bindArrowClickEvent($arrow){
 }
 
 $(document).ready(function(){
+	var $w   = $(window);
+	var $nav = $('.navigationLinks');
+	jQuery.extend($nav, { isFixed : false, homeY : $nav.offset().top });
+
 	$('#menuImg').click(function(){
-	  $('.navigationLinks').toggleClass('transitonNavigationLinks');
+	  $nav.toggleClass('transitonNavigationLinks');
 	});
 	
+	// animate asubmenues and arrow for mobile-width window
 	if (isMobileWidth() && !$arrow1.isBound){
 		bindArrowClickEvent($arrow1);
 		bindArrowClickEvent($arrow2);
 	}
+
+	//pop the navigation on top uopn scroll
+	$w.scroll(function(){
+		var shouldBeFixed =  $w.scrollTop() > $nav.homeY;
+		if( shouldBeFixed && !$nav.isFixed ){
+			$nav.css({position : 'fixed', top : 0});
+			$nav.isFixed = true;
+		}
+		else if (!shouldBeFixed && $nav.isFixed ){
+			$nav.css({position : ''});
+			$nav.isFixed = false;
+		}
+	});
+
 });
 
 $(window).resize(function(){
