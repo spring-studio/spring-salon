@@ -91,7 +91,11 @@
 }
 
 .priceList table tbody tr td:first-child {
-	max-width: 70%;
+	max-width: 40%;
+}
+
+.priceList table tbody tr td:nth-child(2) {
+	max-width: 30%;
 }
 
 .priceList table tbody tr td:last-child{
