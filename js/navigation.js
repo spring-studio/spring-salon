@@ -68,6 +68,10 @@ $(window).resize(function(){
 		$arrow1.subMenu.css({position : 'fixed'});
 		$arrow2.subMenu.css({position : 'fixed'});
 	}
+	else{
+		$arrow1.subMenu.css({position : ''});
+		$arrow2.subMenu.css({position : ''});
+	}
 
 	if (isMobileWidth() && !$arrow1.isBound ){
 		bindArrowClickEvent($arrow1);
