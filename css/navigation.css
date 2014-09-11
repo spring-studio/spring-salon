@@ -53,6 +53,7 @@
 	z-index: 	   10;
 }
 
+
 .navigationLinks {
 	overflow-y: scroll;
 	width: 	  80%;
@@ -156,6 +157,9 @@
 
 	.menuImg {display: none;}
 
+	.navigationLinksWrapper{
+		min-height: 4.2em;
+	}
 	.navigationLinks {
 		width: 100%;
 		height: auto;
