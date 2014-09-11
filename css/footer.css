@@ -1,13 +1,86 @@
 .footerBox {
 	width: 100%;
-	height:auto;
+	height: auto;
 	padding-top: 2em;
 	padding-bottom: 2em;
-	background-color: #dddddd;
+	background-color: #3A3C3E;
 	margin-top: 4em;
 }
 
 .infoBox {
+	text-align: center;
+	width: 75%;
+	margin: auto;
+}
+
+.infoBoxUl {
+	height: 5em;
+	width: 22em;
+	margin:auto;
+	text-align: left;
+	
+}
+
+.infoBoxUl ul {
+	height: 100%;
+}
+
+.infoBoxUl li {
+	display: inline-block;
+		text-align: left;
+		color: #fff;
+}
+
+.infoBoxUl li:first-child {
+	height: 100%;
+}
+
+.infoBoxUl li:last-child {
+	transform:translateY(-1.25em);
+	-webkit-transform:translateY(-1.25em);
+}
+
+.infoBoxUl li:last-child p:first-child {
+	font-size: 1.4em;
+}
+
+.infoBoxUl li:last-child p {
+	text-align: left;
+}
+
+.infoBoxUl ul li img {
+	height: 100%;
+}
+
+@media all and (min-width: 750px) {
+	.infoBoxUl {
+		display: inline-block;
+		width: 24em;
+
+	}
+
+
+	.infoBox {
+		width: 50em;
+		margin: auto;
+	}
+
+	.right {
+		text-align: right;
+	}
+
+	.imgRight {
+		float: right;
+		transform: translateY(-2em);
+		-webkit-transform:translateY(-2em);
+	}
+
+	.textLeft p {
+		text-align: right !important;
+	}
+}
+
+/*.infoBox {
 	width: 85%;
 	max-width: 77em;
 	height: 6em;
@@ -15,12 +88,24 @@
 	text-shadow: 0 1px 0 #AAAAAA;
 }
 
+.div {
+	margin: auto;
+	width: 31em;
+	height: 100%;
+}
+
+.div2 {
+	margin: auto;
+	width: 31em;
+	height: 100%;
+}
+
 .infoImgLeft {
-	width: 30%;
+	width: 50%;
 	max-width: 6em;
 	height: 100%;
 	float: left;
-	text-align: left;
+	text-align: right;
 }
 
 .infoImgLeft img {
@@ -29,11 +114,12 @@
 }
 
 .infoTextLeft {
-	width: 70%;
+	width: 50%;
 	max-width: 16em;
 	height: auto;
 	float: left;
 	padding-top: 1em;
+	text-align: left;
 }
 
 .infoTextLeft p{
@@ -45,12 +131,12 @@
 }
 
 .infoTextRight {
-	width: 70%;
+	width: 60%;
 	max-width: 16em;
 	height: auto;
 	float: right;
 	padding-top: 1em;
-	text-align: right;
+	text-align: left;
 }
 
 .infoTextRight p{
@@ -62,7 +148,7 @@
 }
 
 .infoImgRight {
-	width: 30%;
+	width: 40%;
 	max-width: 6em;
 	height: 100%;
 	float: right;
@@ -73,7 +159,7 @@
 	width: auto;
 	height: 100%;
 }
-
+*/
 
 .copyright {
 	width: 85%;
