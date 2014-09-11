@@ -169,6 +169,46 @@
 	background-size: cover;
 }
 
+.termo {
+	background: url('../images/termo_deka.svg') no-repeat;
+	background-size: cover;
+	-webki-transition:background 250ms ease;
+		   transition:background 250ms ease;
+
+}
+
+.termo:hover, .termo:focus, .termo:active {
+	background: url('../images/termo_deka_hover.svg') no-repeat;
+	background-size: cover;
+}
+
+.lice {
+	background: url('../images/lice.svg') no-repeat;
+	background-size: cover;
+	-webki-transition:background 250ms ease;
+		   transition:background 250ms ease;
+
+}
+
+.lice:hover, .lice:focus, .lice:active {
+	background: url('../images/lice_hover.svg') no-repeat;
+	background-size: cover;
+}
+
+.leda {
+	background: url('../images/njega_leda.svg') no-repeat;
+	background-size: cover;
+	-webki-transition:background 250ms ease;
+		   transition:background 250ms ease;
+
+}
+
+.leda:hover, .leda:focus, .leda:active {
+	background: url('../images/njega_leda_hover.svg') no-repeat;
+	background-size: cover;
+}
+
+
 
 @media all and (min-width: 750px) {
 	.tretmaniList {
