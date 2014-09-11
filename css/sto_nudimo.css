@@ -130,6 +130,20 @@
 	background-size: cover;
 }
 
+.masaze {
+	background: url('../images/masaze.svg') no-repeat;
+	background-size: cover;
+	-webki-transition:background 250ms ease;
+		   transition:background 250ms ease;
+
+}
+
+.masaze:hover, .masaze:focus, .masaze:active {
+	background: url('../images/masaze_hover.svg') no-repeat;
+	background-size: cover;
+}
+
+
 @media all and (min-width: 750px) {
 	.tretmaniList {
 		padding-top: 0;
