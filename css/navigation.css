@@ -270,6 +270,10 @@
 		color: #fff;
 	}
 
+	.menuPositionFixed {
+		position: fixed;
+	}
+
 }
 
 

@@ -143,6 +143,32 @@
 	background-size: cover;
 }
 
+.zene {
+	background: url('../images/depilacija_zene.svg') no-repeat;
+	background-size: cover;
+	-webki-transition:background 250ms ease;
+		   transition:background 250ms ease;
+
+}
+
+.zene:hover, .zene:focus, .zene:active {
+	background: url('../images/depilacija_zene_hover.svg') no-repeat;
+	background-size: cover;
+}
+
+.muski {
+	background: url('../images/depilacija_muski.svg') no-repeat;
+	background-size: cover;
+	-webki-transition:background 250ms ease;
+		   transition:background 250ms ease;
+
+}
+
+.muski:hover, .muski:focus, .muski:active {
+	background: url('../images/depilacija_muski_hover.svg') no-repeat;
+	background-size: cover;
+}
+
 
 @media all and (min-width: 750px) {
 	.tretmaniList {
