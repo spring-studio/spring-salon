@@ -117,6 +117,19 @@
 	background-size: cover;
 }
 
+.hand {
+	background: url('../images/hand.svg') no-repeat;
+	background-size: cover;
+	-webki-transition:background 250ms ease;
+		   transition:background 250ms ease;
+
+}
+
+.hand:hover, .hand:focus, .hand:active {
+	background: url('../images/hand_hover.svg') no-repeat;
+	background-size: cover;
+}
+
 @media all and (min-width: 750px) {
 	.tretmaniList {
 		padding-top: 0;
