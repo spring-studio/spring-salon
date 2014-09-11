@@ -63,23 +63,23 @@ $(document).ready(function(){
 });
 
 $(window).resize(function(){
-	//fix the submenu navigation if needed
-	if(!isMobileWidth() && $w.scrollTop() > $nav.homeY ){
-		$arrow1.subMenu.css({position : 'fixed'});
-		$arrow2.subMenu.css({position : 'fixed'});
-	}
-	else{
+	if (isMobileWidth()){
+		//fix the submenu navigation if needed
 		$arrow1.subMenu.css({position : ''});
 		$arrow2.subMenu.css({position : ''});
-	}
-
-	if (isMobileWidth() && !$arrow1.isBound ){
-		bindArrowClickEvent($arrow1);
-		bindArrowClickEvent($arrow2);
-	}
-	else if (!isMobileWidth() && $arrow1.isBound ){
-		unbindArrowClickEvent($arrow1);
-		unbindArrowClickEvent($arrow2);
+		if (!$arrow1.isBound ){
+			bindArrowClickEvent($arrow1);
+			bindArrowClickEvent($arrow2);
+		}
+	}else{
+		if($w.scrollTop() > $nav.homeY ){
+			$arrow1.subMenu.css({position : 'fixed'});
+			$arrow2.subMenu.css({position : 'fixed'});
+		}
+		if ( $arrow1.isBound ){
+			unbindArrowClickEvent($arrow1);
+			unbindArrowClickEvent($arrow2);
+		}
 	}
 
 });
