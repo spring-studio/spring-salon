@@ -85,6 +85,10 @@
 	text-align: center;
 }
 
+.priceList table thead tr td:nth-child(2n) {
+	text-align: center;
+}
+
 .priceList table tbody tr td {
 	text-indent: 0.3em;
 	border-top: 1px solid #EAEAEA;
@@ -96,6 +100,7 @@
 
 .priceList table tbody tr td:nth-child(2) {
 	max-width: 30%;
+	text-align: center;
 }
 
 .priceList table tbody tr td:last-child{
