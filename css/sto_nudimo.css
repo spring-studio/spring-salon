@@ -1,3 +1,16 @@
+.billboard {
+	width: 100%;
+	height: 50em;
+	background: url('../images/billboard.jpg') no-repeat 100% 60%;
+	background-size: cover;
+}
+
+.torn {
+	height: 100%;
+	width: 100%;
+	background: url('../images/torn-paper.png') repeat-x center scroll transparent;
+	background-position: bottom;
+}
 .tretmaniList {
 	max-width: 85%;
 	margin: auto;
