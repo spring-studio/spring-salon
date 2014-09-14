@@ -258,6 +258,7 @@
 		background-color: #fff;
 		margin: auto;
 		transform: rotate(45deg);
+		-webkit-transform:rotate(45deg);
 		margin-top: -1em;
 		border-bottom-right-radius: 100em;
 	}

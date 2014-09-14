@@ -121,7 +121,7 @@
 .feet {
 	background: url('../images/feet.svg') no-repeat;
 	background-size: cover;
-	-webki-transition:background 250ms ease;
+	-webkit-transition:background 250ms ease;
 		   transition:background 250ms ease;
 }
 
@@ -133,7 +133,7 @@
 .hand {
 	background: url('../images/hand.svg') no-repeat;
 	background-size: cover;
-	-webki-transition:background 250ms ease;
+	-webkit-transition:background 250ms ease;
 		   transition:background 250ms ease;
 
 }
@@ -146,7 +146,7 @@
 .masaze {
 	background: url('../images/masaze.svg') no-repeat;
 	background-size: cover;
-	-webki-transition:background 250ms ease;
+	-webkit-transition:background 250ms ease;
 		   transition:background 250ms ease;
 
 }
@@ -159,7 +159,7 @@
 .zene {
 	background: url('../images/depilacija_zene.svg') no-repeat;
 	background-size: cover;
-	-webki-transition:background 250ms ease;
+	-webkit-transition:background 250ms ease;
 		   transition:background 250ms ease;
 
 }
@@ -172,7 +172,7 @@
 .muski {
 	background: url('../images/depilacija_muski.svg') no-repeat;
 	background-size: cover;
-	-webki-transition:background 250ms ease;
+	-webkit-transition:background 250ms ease;
 		   transition:background 250ms ease;
 
 }
@@ -185,7 +185,7 @@
 .termo {
 	background: url('../images/termo_deka.svg') no-repeat;
 	background-size: cover;
-	-webki-transition:background 250ms ease;
+	-webkit-transition:background 250ms ease;
 		   transition:background 250ms ease;
 
 }
@@ -198,7 +198,7 @@
 .lice {
 	background: url('../images/lice.svg') no-repeat;
 	background-size: cover;
-	-webki-transition:background 250ms ease;
+	-webkit-transition:background 250ms ease;
 		   transition:background 250ms ease;
 
 }
@@ -211,13 +211,52 @@
 .leda {
 	background: url('../images/njega_leda.svg') no-repeat;
 	background-size: cover;
-	-webki-transition:background 250ms ease;
+	-webkit-transition:background 250ms ease;
 		   transition:background 250ms ease;
 
 }
 
 .leda:hover, .leda:focus, .leda:active {
 	background: url('../images/njega_leda_hover.svg') no-repeat;
+	background-size: cover;
+}
+
+.standard {
+	background: url('../images/standard.svg') no-repeat;
+	background-size: cover;
+	-webkit-transition:background 250ms ease;
+		   transition:background 250ms ease;
+
+}
+
+.standard:hover, .standard:focus, .standard:active {
+	background: url('../images/standard_hover.svg') no-repeat;
+	background-size: cover;
+}
+
+.exclusive {
+	background: url('../images/exclusive.svg') no-repeat;
+	background-size: cover;
+	-webkit-transition:background 250ms ease;
+		   transition:background 250ms ease;
+
+}
+
+.exclusive:hover, .exclusive:focus, .exclusive:active {
+	background: url('../images/exclusive_hover.svg') no-repeat;
+	background-size: cover;
+}
+
+.rodendan {
+	background: url('../images/rodendan.svg') no-repeat;
+	background-size: cover;
+	-webkit-transition:background 250ms ease;
+		   transition:background 250ms ease;
+
+}
+
+.rodendan:hover, .rodendan:focus, .rodendan:active {
+	background: url('../images/rodendan_hover.svg') no-repeat;
 	background-size: cover;
 }
 
