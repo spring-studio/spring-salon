@@ -55,27 +55,55 @@
 	</nav>
 	<content class="content">
 		<div id="map_canvas"></div>
-		<div class="kurac">dsadasd</div>
 	</content>
 
     <script>
- function initialize() {
-  var myLatlng = new google.maps.LatLng(45.7977839,15.9530061);
-  var mapOptions = {
-    zoom: 15,
-    center: myLatlng
-  }
-  var map = new google.maps.Map(document.getElementById('map_canvas'), mapOptions);
+  $( document ).ready( function() {
+	//Google Maps JS
+	//Set Map
+	function initialize() {
+			var myLatlng = new google.maps.LatLng(45.7977839,15.9530061);
+			var imagePath = 'http://www.jamesnew.co.uk/googlePin.png'
+			var mapOptions = {
+				zoom: 11,
+				center: myLatlng,
+				mapTypeId: google.maps.MapTypeId.ROADMAP
+			}
 
-  var marker = new google.maps.Marker({
-      position: myLatlng,
-      map: map,
-      title: 'Hello World!'
-  });
-}
+		var map = new google.maps.Map(document.getElementById('map_canvas'), mapOptions);
+		//Callout Content
+		var contentString = 'Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,';
+		//Set window width + content
+		var infowindow = new google.maps.InfoWindow({
+			content: contentString,
+			maxWidth: 900
+		});
 
-google.maps.event.addDomListener(window, 'load', initialize);
+		//Add Marker
+		var marker = new google.maps.Marker({
+			position: myLatlng,
+			map: map,
+			icon: imagePath,
+			title: 'image title'
+		});
 
+		google.maps.event.addListener(marker, 'click', function() {
+			infowindow.open(map,marker);
+		});
+
+		//Resize Function
+		google.maps.event.addDomListener(window, "resize", function() {
+			var center = map.getCenter();
+			google.maps.event.trigger(map, "resize");
+			map.setCenter(center);
+          infowindow.open(map);
+
+		});
+	}
+
+	google.maps.event.addDomListener(window, 'load', initialize);
+
+});
 
     </script>
 
