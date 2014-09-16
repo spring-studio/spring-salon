@@ -9,18 +9,78 @@ html, body, #map_canvas, .content {
 	height: 100%;
 }
 
-.kurac {
-	width: 100%;
-	height: 12em;
-	background-color: green;
-	position: absolute; 
-	bottom: 0;
-
-	z-index: 1;
+form {
+	margin: 0 auto;
 }
 
-@media all and (min-width: 750px) {
+input {
+	max-width: 19.5em;
+	min-width: 17.5em;
+	height: 2em;
+	padding: 0.2em 0.4em;
+	font-family: 'Open sans';
+	border: 1px solid #DDDDDD;
+	-webkit-transition: border 250ms ease;
+	transition:border 250ms ease;
+}
 
+textarea {
+	max-width: 20em;
+	min-width: 18em;
+	max-height: 8em;
+	min-height: 8em;
+	padding: 0.2em 0.4em;
+	font-family: 'Open sans';
+	font-size: 1em;
+	border: 1px solid #DDDDDD;
+	-webkit-transition: border 250ms ease;
+	transition:border 250ms ease;
+}
+
+input:active, input:focus, textarea:active, textarea:focus {
+	border: 1px solid #c092c3;
+}
+
+.h1Kontakt {
+	font-size: 1.3em;
+	text-align: center;
+	font-weight: normal;
+	text-transform: uppercase;
+	border-bottom: 1px solid #DDD;
+	padding-bottom: 0.5em;
+	margin: 0px auto 1em auto;
+	max-width: 20em;
+	color: #A1A1A1;
+
+}
+
+.h4Kontakt {
+	font-size: 1.1em;
+	text-align: center;
+	font-weight: normal;
+	text-transform: uppercase;
+	margin: 0px auto 0.5em auto;
+	max-width: 20em;
+	color: #797979;
+}
+
+.h3Kontakt {
+	font-size: 1.3em;
+	text-align: center;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin: 0px auto 0.5em auto;
+	max-width: 20em;
+	color: #666666;
+}
+
+input[type=submit] {
+	width: 1em;
+
+}
+
+
+@media all and (min-width: 750px) {
 	#map_canvas {
 		margin-top: 0;
 	}

@@ -65,14 +65,25 @@
 			var myLatlng = new google.maps.LatLng(45.7977839,15.9530061);
 			var imagePath = 'http://www.jamesnew.co.uk/googlePin.png'
 			var mapOptions = {
-				zoom: 11,
+				zoom: 15,
 				center: myLatlng,
 				mapTypeId: google.maps.MapTypeId.ROADMAP
 			}
 
 		var map = new google.maps.Map(document.getElementById('map_canvas'), mapOptions);
 		//Callout Content
-		var contentString = 'Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,';
+		var contentString = '<div id="content">'+
+							      '<form>'+'<h1 class="h1Kontakt">Dogovorite svoj termin</h1>'+
+							      		'<h4 class="h4Kontakt">Preko telefona</h3>'+
+							      		'<h3 class="h3Kontakt">099 873 56 32</h3>'+
+							      		'<h4 class="h4Kontakt">Ili</h4>'+
+							      		'<h4 class="h4Kontakt">Slanjem E-maila</h4>'+
+							      		'<input type="text" name="ime i Prezime" placeholder="Vaše ime i prezime">'+'<br/>'+'<br/>'+
+							      		'<input type="email" name="e-mail" placeholder="Vaš email">'+'<br/>'+'<br/>'+
+							      		'<textarea name="Poruka" placeholder="Unesite Vašu poruku.."></textarea>'+'<br/>'+'<br/>'+
+							      		'<input type="submit" value="Pošalji"> '+
+							      '</form>'+
+						      '</div>';
 		//Set window width + content
 		var infowindow = new google.maps.InfoWindow({
 			content: contentString,
@@ -80,16 +91,17 @@
 		});
 
 		//Add Marker
-		var marker = new google.maps.Marker({
-			position: myLatlng,
-			map: map,
-			icon: imagePath,
-			title: 'image title'
-		});
+		 var marker = new google.maps.Marker({
+      position: myLatlng,
+      map: map,
+      title: 'Uluru (Ayers Rock)'
+  		});
+
 
 		google.maps.event.addListener(marker, 'click', function() {
-			infowindow.open(map,marker);
+   			infowindow.open(map,marker);
 		});
+		infowindow.open(map,marker);
 
 		//Resize Function
 		google.maps.event.addDomListener(window, "resize", function() {
@@ -97,9 +109,9 @@
 			google.maps.event.trigger(map, "resize");
 			map.setCenter(center);
           infowindow.open(map);
-
 		});
 	}
+
 
 	google.maps.event.addDomListener(window, 'load', initialize);
 
