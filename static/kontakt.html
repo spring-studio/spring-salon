@@ -58,20 +58,17 @@
 	</content>
 	<script type="text/javascript" src="../js/navigation.js"></script>
 	<script type="text/javascript">
-		// load only if desktop
+		// conditional loading of contact.js
 		(function(){
-			function isMobile(){
-				return 'ontouchstart' in document.documentElement;
-			}
+			function isMobile(){ return 'ontouchstart' in document.documentElement; }
 
 			function loadContactJs(){
 				var element = document.createElement("script");
 				element.src = "../js/contact.js";
 				document.body.appendChild(element);
 			}
-			
-			if( !isMobile())
-				loadContactJs();
+			// load only if desktop
+			if( !isMobile()) loadContactJs();
 		})();
 		
 	</script>
