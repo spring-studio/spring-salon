@@ -1,7 +1,7 @@
 #googleMapsFormContentResponsive {
 	margin: 0em auto;
 	width: auto;
-	padding: 5em 0;
+	padding: 5em 0 0 0;
 }
 
 #googleMapsFormContentResponsive form {
@@ -135,4 +135,6 @@ input[type="text"], input[type="tel"] {
 	.h3Kontakt {
 		font-size: 1.05em;
 	}
+
+	footer {display: none;}
 }
