@@ -8,8 +8,8 @@
 	<link rel="stylesheet" type="text/css" href="../css/navigation.css">
 	<link rel="stylesheet" type="text/css" href="../css/kontakt.css">
 	<link rel="stylesheet" type="text/css" href="../css/footer.css">
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Butterfly+Kids&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	<link href=http://fonts.googleapis.com/css?family=OpenSans&subset=latin,latin-ext rel=stylesheet type=text/css>
+	<link href=http://fonts.googleapis.com/css?family=ButterflyKids&subset=latin,latin-ext rel=stylesheet type=text/css>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script src="https://maps.googleapis.com/maps/api/js"></script>
 
@@ -55,8 +55,22 @@
 	</nav>
 	<content class="content">
 		<div id="map_canvas"></div>
+		<div id="googleMapsFormContentResponsive">
+			<form method="post" action="mailto:nskarica1@gmail.com" enctype="text/plain" target="_blank"><h1 class="h1Kontakt">Dogovorite svoj termin</h1>
+				<h4 class="h4Kontakt">Preko telefona</h3>
+				<h3 class="h3Kontakt">099 873 56 32</h3>
+				<h4 class="h4Kontakt">Ili</h4>
+				<h4 class="h4Kontakt">Slanjem E-maila</h4>
+				<input type="text" name="Ime i Prezime" placeholder="Vaše ime i prezime" required><br/><br/>
+				<input type="tel" name="Broj mobitela" placeholder="Vaš kontakt broj" required><br/><br/>
+				<textarea name="Poruka" placeholder="Unesite Vašu poruku.."  required></textarea><br/>
+				<input type="submit" value="Pošalji" class="submit" target="_blank">  <br/><br/>
+				<h4 class="h4Kontakt">Gdje se nalazimo?</h3>
+				<h3 class="h3Kontakt zadnji">Dobojska 28, Zagreb</h3>
+		</form>
+		</div>
 	</content>
-	
+
 	<script type="text/javascript" src="../js/navigation.js"></script>
 	<script type="text/javascript">
 		// conditional loading of contact.js
