@@ -9,10 +9,10 @@ html, body, #map_canvas, .content {
 	height: 100%;
 }
 
-form {
-	margin: 0 auto;
-}
+#googleMapsFormContent {
+		overflow: hidden;
 
+}
 
 input[type="text"], input[type="tel"] {
 	max-width: 19.5em;
@@ -50,7 +50,7 @@ input[type="submit"] {
 	border: 1px solid #DDDDDD;
 	-webkit-transition: border 250ms ease;
 	transition:border 250ms ease;
-	margin: 0 8em;
+	margin: 0.5em 8em 0 8em;
 }
 
 .h1Kontakt {
@@ -58,8 +58,7 @@ input[type="submit"] {
 	text-align: center;
 	font-weight: normal;
 	text-transform: uppercase;
-	border-bottom: 1px solid #DDD;
-	padding-bottom: 0.5em;
+	border-bottom: 1px solid rgba(0,0,0,0.1);
 	margin: 0px auto 1em auto;
 	max-width: 20em;
 	color: #A1A1A1;
@@ -83,6 +82,10 @@ input[type="submit"] {
 	margin: 0px auto 0.5em auto;
 	max-width: 20em;
 	color: #666666;
+}
+
+.zadnji {
+	margin-bottom: 0;
 }
 
 .pKontakt {

@@ -14,7 +14,7 @@
 		var map = new google.maps.Map(document.getElementById('map_canvas'), mapOptions);
 		//Callout Content
 		var contentString = 
-		'<div id="content">'+
+		'<div id="googleMapsFormContent">'+
 			'<form method="post" action="mailto:nskarica1@gmail.com" enctype="text/plain" target="_blank">'+'<h1 class="h1Kontakt">Dogovorite svoj termin</h1>'+
 				'<h4 class="h4Kontakt">Preko telefona</h3>'+
 				'<h3 class="h3Kontakt">099 873 56 32</h3>'+
@@ -22,7 +22,7 @@
 				'<h4 class="h4Kontakt">Slanjem E-maila</h4>'+
 				'<input type="text" name="Ime i Prezime" placeholder="Vaše ime i prezime" required>'+'<br/>'+'<br/>'+
 				'<input type="tel" name="Broj mobitela" placeholder="Vaš kontakt broj" required>'+'<br/>'+'<br/>'+
-				'<textarea name="Poruka" placeholder="Unesite Vašu poruku.."  required></textarea>'+'<br/>'+'<br/>'+
+				'<textarea name="Poruka" placeholder="Unesite Vašu poruku.."  required></textarea>'+'<br/>'+
 				'<input type="submit" value="Pošalji" class="submit" target="_blank"> '+ '<br/>'+'<br/>'+
 				'<h4 class="h4Kontakt">Gdje se nalazimo?</h3>'+
 				'<h3 class="h3Kontakt">Dobojska 28, Zagreb</h3>'+
