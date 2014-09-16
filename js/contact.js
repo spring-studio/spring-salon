@@ -25,7 +25,7 @@
 				'<textarea name="Poruka" placeholder="Unesite Vašu poruku.."  required></textarea>'+'<br/>'+
 				'<input type="submit" value="Pošalji" class="submit" target="_blank"> '+ '<br/>'+'<br/>'+
 				'<h4 class="h4Kontakt">Gdje se nalazimo?</h3>'+
-				'<h3 class="h3Kontakt zadnji">Dobojska 28, Zagreb</h3>'+
+				'<h3 class="h3Kontakt">Dobojska 28, Zagreb</h3>'+
 		'</form>'+
 		'</div>';
 		//Set window width + content
