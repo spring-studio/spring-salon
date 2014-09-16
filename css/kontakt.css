@@ -16,7 +16,7 @@ form {
 
 input[type="text"], input[type="tel"] {
 	max-width: 19.5em;
-	min-width: 17.5em;
+	min-width: 19.5em;
 	height: 2em;
 	padding: 0.2em 0.4em;
 	font-family: 'Open sans';
@@ -27,7 +27,7 @@ input[type="text"], input[type="tel"] {
 
 textarea {
 	max-width: 20em;
-	min-width: 18em;
+	min-width: 20em;
 	max-height: 8em;
 	min-height: 8em;
 	padding: 0.2em 0.4em;
@@ -50,7 +50,7 @@ input[type="submit"] {
 	border: 1px solid #DDDDDD;
 	-webkit-transition: border 250ms ease;
 	transition:border 250ms ease;
-	margin: 0 auto;
+	margin: 0 8em;
 }
 
 .h1Kontakt {
