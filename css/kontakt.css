@@ -13,7 +13,8 @@ form {
 	margin: 0 auto;
 }
 
-input {
+
+input[type="text"], input[type="tel"] {
 	max-width: 19.5em;
 	min-width: 17.5em;
 	height: 2em;
@@ -37,8 +38,19 @@ textarea {
 	transition:border 250ms ease;
 }
 
-input:active, input:focus, textarea:active, textarea:focus {
+input:active, input:focus, textarea:active, textarea:focus, input[type="submit"]:focus, input[type="submit"]:active {
 	border: 1px solid #c092c3;
+}
+
+input[type="submit"] {
+	width: 5em;
+	height: 2em;
+	padding: 0.2em 0.4em;
+	font-family: 'Open sans';
+	border: 1px solid #DDDDDD;
+	-webkit-transition: border 250ms ease;
+	transition:border 250ms ease;
+	margin: 0 auto;
 }
 
 .h1Kontakt {
@@ -51,7 +63,6 @@ input:active, input:focus, textarea:active, textarea:focus {
 	margin: 0px auto 1em auto;
 	max-width: 20em;
 	color: #A1A1A1;
-
 }
 
 .h4Kontakt {
@@ -74,11 +85,15 @@ input:active, input:focus, textarea:active, textarea:focus {
 	color: #666666;
 }
 
-input[type=submit] {
-	width: 1em;
-
+.pKontakt {
+	font-size: 1.3em;
+	text-align: center;
+	font-weight: normal;
+	text-transform: uppercase;
+	margin: 1em auto 0em auto;
+	max-width: 20em;
+	color: #666666;
 }
-
 
 @media all and (min-width: 750px) {
 	#map_canvas {

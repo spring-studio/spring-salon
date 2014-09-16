@@ -50,7 +50,7 @@
 						<li><a href="../static/rodendan.html">Rođendan</a></li>
 					</ul>
 				</li>
-				<li class="link"><a href="#">Kontakt</a></li>
+				<li class="link"><a href="../static/kontakt.html">Kontakt</a></li>
 			</ul>
 	</nav>
 	<content class="content">
@@ -63,25 +63,28 @@
 	//Set Map
 	function initialize() {
 			var myLatlng = new google.maps.LatLng(45.7977839,15.9530061);
+			var centerMap = new google.maps.LatLng(45.805596, 15.952802);
 			var imagePath = 'http://www.jamesnew.co.uk/googlePin.png'
 			var mapOptions = {
 				zoom: 15,
-				center: myLatlng,
+				center: centerMap,
 				mapTypeId: google.maps.MapTypeId.ROADMAP
 			}
 
 		var map = new google.maps.Map(document.getElementById('map_canvas'), mapOptions);
 		//Callout Content
 		var contentString = '<div id="content">'+
-							      '<form>'+'<h1 class="h1Kontakt">Dogovorite svoj termin</h1>'+
+							      '<form method="post" action="mailto:nskarica1@gmail.com" enctype="text/plain" target="_blank">'+'<h1 class="h1Kontakt">Dogovorite svoj termin</h1>'+
 							      		'<h4 class="h4Kontakt">Preko telefona</h3>'+
 							      		'<h3 class="h3Kontakt">099 873 56 32</h3>'+
 							      		'<h4 class="h4Kontakt">Ili</h4>'+
 							      		'<h4 class="h4Kontakt">Slanjem E-maila</h4>'+
-							      		'<input type="text" name="ime i Prezime" placeholder="Vaše ime i prezime">'+'<br/>'+'<br/>'+
-							      		'<input type="email" name="e-mail" placeholder="Vaš email">'+'<br/>'+'<br/>'+
-							      		'<textarea name="Poruka" placeholder="Unesite Vašu poruku.."></textarea>'+'<br/>'+'<br/>'+
-							      		'<input type="submit" value="Pošalji"> '+
+							      		'<input type="text" name="Ime i Prezime" placeholder="Vaše ime i prezime" required>'+'<br/>'+'<br/>'+
+							      		'<input type="tel" name="Broj mobitela" placeholder="Vaš kontakt broj" required>'+'<br/>'+'<br/>'+
+							      		'<textarea name="Poruka" placeholder="Unesite Vašu poruku.."  required></textarea>'+'<br/>'+'<br/>'+
+							      		'<input type="submit" value="Pošalji" class="submit" target="_blank"> '+ '<br/>'+'<br/>'+
+							      		'<h4 class="h4Kontakt">Gdje se nalazimo?</h3>'+
+							      		'<h3 class="h3Kontakt">Dobojska 28, Zagreb</h3>'+'<h3 class="h3Kontakt">10 000, Hrvatska</h3>'+
 							      '</form>'+
 						      '</div>';
 		//Set window width + content
