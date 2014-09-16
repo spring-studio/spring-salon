@@ -41,8 +41,6 @@
 .tretmaniList a, .tretmaniList a:visited, .tretmaniList a:link, .wellnessList a, .wellnessList a:visited, .wellnessList a:link{
 	color: #000;
 	text-decoration: none;
-	transition: color 200ms ease;
-	-webkit-transition: color 200ms ease;
 	text-transform: uppercase;
 }
 
@@ -51,7 +49,6 @@
 }
 
 .tretmaniList a:active, .tretmaniList a:focus, .wellnessList a:active, .wellnessList a:focus{
-	transition:none;
 	color: #c092c3;
 }
 
@@ -70,8 +67,6 @@
 	border-radius: 25px;
 	width: 6em;
 	height: 6em;
-	transition:border 250ms ease;
-	-webkit-transition:border 250ms ease;
 	margin: auto;
 }
 
@@ -81,7 +76,6 @@
 
 .imgBox:active, .imgBox:focus, .wellnessImgBox:active, .wellnessImgBox:focus {
 	border: 1px solid #c092c3;
-	transition:none;
 }
 
 .wellnessList{
@@ -113,16 +107,14 @@
 	border-radius: 100px;
 	width: 10em;
 	height: 10em;
-	transition:border 250ms ease;
-	-webkit-transition:border 250ms ease;
 	margin: auto;
 }
 
 .feet {
 	background: url('../images/feet.svg') no-repeat;
 	background-size: cover;
-	-webkit-transition:background 250ms ease;
-		   transition:background 250ms ease;
+	
+		   
 }
 
 .feet:hover, .feet:focus, .feet:active {
@@ -133,8 +125,8 @@
 .hand {
 	background: url('../images/hand.svg') no-repeat;
 	background-size: cover;
-	-webkit-transition:background 250ms ease;
-		   transition:background 250ms ease;
+	
+		   
 
 }
 
@@ -146,8 +138,8 @@
 .masaze {
 	background: url('../images/masaze.svg') no-repeat;
 	background-size: cover;
-	-webkit-transition:background 250ms ease;
-		   transition:background 250ms ease;
+	-
+		   
 
 }
 
@@ -159,8 +151,8 @@
 .zene {
 	background: url('../images/depilacija_zene.svg') no-repeat;
 	background-size: cover;
-	-webkit-transition:background 250ms ease;
-		   transition:background 250ms ease;
+	
+		   
 
 }
 
@@ -172,8 +164,8 @@
 .muski {
 	background: url('../images/depilacija_muski.svg') no-repeat;
 	background-size: cover;
-	-webkit-transition:background 250ms ease;
-		   transition:background 250ms ease;
+	
+		   
 
 }
 
@@ -185,8 +177,8 @@
 .termo {
 	background: url('../images/termo_deka.svg') no-repeat;
 	background-size: cover;
-	-webkit-transition:background 250ms ease;
-		   transition:background 250ms ease;
+	
+		   
 
 }
 
@@ -198,9 +190,6 @@
 .lice {
 	background: url('../images/lice.svg') no-repeat;
 	background-size: cover;
-	-webkit-transition:background 250ms ease;
-		   transition:background 250ms ease;
-
 }
 
 .lice:hover, .lice:focus, .lice:active {
@@ -211,9 +200,6 @@
 .leda {
 	background: url('../images/njega_leda.svg') no-repeat;
 	background-size: cover;
-	-webkit-transition:background 250ms ease;
-		   transition:background 250ms ease;
-
 }
 
 .leda:hover, .leda:focus, .leda:active {
@@ -224,9 +210,6 @@
 .standard {
 	background: url('../images/standard.svg') no-repeat;
 	background-size: cover;
-	-webkit-transition:background 250ms ease;
-		   transition:background 250ms ease;
-
 }
 
 .standard:hover, .standard:focus, .standard:active {
@@ -237,9 +220,6 @@
 .exclusive {
 	background: url('../images/exclusive.svg') no-repeat;
 	background-size: cover;
-	-webkit-transition:background 250ms ease;
-		   transition:background 250ms ease;
-
 }
 
 .exclusive:hover, .exclusive:focus, .exclusive:active {
@@ -250,9 +230,6 @@
 .rodendan {
 	background: url('../images/rodendan.svg') no-repeat;
 	background-size: cover;
-	-webkit-transition:background 250ms ease;
-		   transition:background 250ms ease;
-
 }
 
 .rodendan:hover, .rodendan:focus, .rodendan:active {

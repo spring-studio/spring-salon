@@ -149,7 +149,7 @@
 	.navigationLogoHeader {		
 		background-color: #fff;
 		height: 6em;
-		position: initial;
+		position: static;
 		border: none;
 	}
 
@@ -168,7 +168,7 @@
 		height: auto;
 		text-align: center;
 		line-height: 4em;
-		bottom: initial;
+		bottom: 0;
 		bottom: auto;
 		background-image: none;
 		transition: none;
@@ -180,7 +180,7 @@
 		-webkit-transform:none;
 		*margin-top: 6em;
 		border-bottom: 1px solid #c092c3;
-		position: initial;
+		position: static;
 	}
 
 	.link{
@@ -189,7 +189,7 @@
 		width: auto;
 		height: auto;
 		border: none;
-		text-indent: initial;
+		text-indent: static;
 		line-height: 4em;
 	}
 
@@ -202,7 +202,7 @@
 
 	.link:hover, .link:active, .link:focus{
 		background-color: transparent;
-		border-bottom: initial;
+		border-bottom: 0;
 	}
 
 	.subMenu, .subMenu2{
