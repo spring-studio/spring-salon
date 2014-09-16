@@ -60,7 +60,16 @@
 }
 
 .descriptionText p {
-	font-size: 1.4em;
+	font-size: 1.2em;
+	padding-left: 1em;
+	text-align: justify;
+}
+
+.descriptionText h2 {
+	color: #A1A1A3;
+	border-bottom: 1px solid #DDDDDD;
+	text-indent: 0.35em;
+	font-weight: normal;
 }
 
 .priceList {
