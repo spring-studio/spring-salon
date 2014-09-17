@@ -76,6 +76,7 @@
 	z-index: 9;
 	text-align: right;
 	list-style: none;
+	overflow: hidden;
 
 
 }
