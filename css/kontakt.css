@@ -47,7 +47,7 @@ input[type="text"], input[type="tel"] {
 		border: 1px solid #DDDDDD;
 		-webkit-transition: border 250ms ease;
 		transition:border 250ms ease;
-		margin: 0.5em 8em 0 8em;
+		margin: 0.5em auto 0 auto;
 	}
 
 	.h1Kontakt {
@@ -81,6 +81,15 @@ input[type="text"], input[type="tel"] {
 		color: #666666;
 	}
 
+	.h5Kontakt {
+		font-size: 1.2em;
+		text-align: center;
+		font-weight: normal;
+		text-transform: uppercase;
+		margin: 0px auto 0.5em auto;
+		max-width: 20em;
+		color: #797979;
+	}
 
 
 @media all and (min-width: 750px) {
@@ -105,6 +114,7 @@ input[type="text"], input[type="tel"] {
 		max-width: 19.5em;
 		min-width: 19.5em;
 		height: 1.5em;
+		margin: 0.3em 0 0.5em 0;
 	}
 
 	textarea {
@@ -112,6 +122,8 @@ input[type="text"], input[type="tel"] {
 		min-width: 20em;
 		max-height: 5em;
 		min-height: 5em;
+		margin-bottom: 0.4em;
+
 	}
 
 	input:active, input:focus, textarea:active, textarea:focus, input[type="submit"]:focus, input[type="submit"]:active {
@@ -122,6 +134,7 @@ input[type="text"], input[type="tel"] {
 		width: 5em;
 		height: 2em;
 		padding: 0.2em 0.4em;
+		margin:0 8em 0.8em 8em;
 	}
 
 	.h1Kontakt {
@@ -130,11 +143,22 @@ input[type="text"], input[type="tel"] {
 
 	.h4Kontakt {
 		font-size: 1.05em;
+		margin-bottom: 0.2em;
 	}
 
 	.h3Kontakt {
 		font-size: 1.05em;
+		margin-bottom: 0.2em;
 	}
 
+	.h5Kontakt {
+		font-size: 0.7em;
+	}
+
+	.dobojskaMargin {
+		margin-bottom: 0.7em;
+	}
+
+	
 	footer {display: none;}
 }

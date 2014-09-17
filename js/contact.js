@@ -20,12 +20,15 @@
 				'<h3 class="h3Kontakt">099 873 56 32</h3>'+
 				'<h4 class="h4Kontakt">Ili</h4>'+
 				'<h4 class="h4Kontakt">Slanjem E-maila</h4>'+
-				'<input type="text" name="Ime i Prezime" placeholder="Vaše ime i prezime" required>'+'<br/>'+'<br/>'+
-				'<input type="tel" name="Broj mobitela" placeholder="Vaš kontakt broj" required>'+'<br/>'+'<br/>'+
+				'<input type="text" name="Ime i Prezime" placeholder="Vaše ime i prezime" required>'+'<br/>'+
+				'<input type="tel" name="Broj mobitela" placeholder="Vaš kontakt broj" required>'+'<br/>'+
 				'<textarea name="Poruka" placeholder="Unesite Vašu poruku.."  required></textarea>'+'<br/>'+
-				'<input type="submit" value="Pošalji" class="submit" target="_blank"> '+ '<br/>'+'<br/>'+
+				'<input type="submit" value="Pošalji" class="submit" target="_blank"> '+		
 				'<h4 class="h4Kontakt">Gdje se nalazimo?</h3>'+
-				'<h3 class="h3Kontakt">Dobojska 28, Zagreb</h3>'+
+				'<h3 class="h3Kontakt dobojskaMargin">Dobojska 28, Zagreb</h3>'+
+				'<h4 class="h4Kontakt">Radno vrijeme</h4>'+
+				'<h3 class="h3Kontakt">10:00 - 20:00</h3>'+
+				'<h5 class="h5Kontakt">ponedjeljak do subote</h5>'+
 		'</form>'+
 		'</div>';
 		//Set window width + content
