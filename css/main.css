@@ -19,3 +19,15 @@ body {
 .clear {
 	clear: both;
 }
+
+#activeLink {
+	color:#C092C3; 
+}
+
+.subMenu li:hover > #activeLink {
+	color: #ffffff;
+}
+
+.subMenu2 li:hover > #activeLink {
+	color: #ffffff;
+}
