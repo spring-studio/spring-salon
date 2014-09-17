@@ -8,7 +8,7 @@
 	margin: 2em auto 0px auto;
 	background: url('../images/termo_deka.jpg') no-repeat 20% 100% transparent;
 	width: 90%;
-	height: 40em;
+	height: 15em;
 	background-size: cover;
 	position:relative;       
     -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
@@ -133,6 +133,7 @@
 		float: left;
 		margin: 2em 5% 0 auto;
 		width: 50%;
+		height: 40em;
 	}
 
 	.descriptionText {
