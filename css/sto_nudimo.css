@@ -1,7 +1,7 @@
 .billboard {
 	width: 100%;
-	height: 50em;
-	background: url('../images/billboard.jpg') no-repeat 100% 60%;
+	height: 25em;
+	background: url('../images/billboard.jpg') no-repeat 40% 60%;
 	background-size: cover;
 }
 
@@ -268,4 +268,14 @@
 	.wellnessList li {
 		width: 23em;
 	}
+
+}
+
+@media all and (min-width:1440px){
+	.billboard {
+		height: 45em;
+		background: url('../images/billboard.jpg') no-repeat 100% 60%;
+		background-size: cover;
+	}
+}
 }

@@ -56,6 +56,11 @@
   	float: left;
 	margin-top: -3.3em;
 	margin-left: 1em;
+	z-index: 99999;
+}
+
+#menuImg {
+	z-index: 999999;
 }
 
 
