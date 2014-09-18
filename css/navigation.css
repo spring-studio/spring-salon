@@ -65,8 +65,8 @@
 	height: 100%;
 	background-color: rgba(0,0,0,0);
 	position: fixed;
-	transition: background-color 300ms ease;
-	-webkit-transition:background-color 300ms ease;
+	transition: background-color 200ms ease;
+	-webkit-transition:background-color 200ms ease;
 	z-index: 1;
 	cursor: pointer;
 }
@@ -74,7 +74,6 @@
 .navigationLinksWrapperOpacity {
 	background-color: rgba(0,0,0,0.5);
 }
-
 
 .navigationLinks {
 	overflow-y: scroll;
@@ -98,6 +97,8 @@
 	-webkit-transform: translate3d(0,0,0);
 	transform: translate3d(0,0,0);
 }
+
+
 
 .link {
 	width: 100%;
