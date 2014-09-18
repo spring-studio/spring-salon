@@ -1,22 +1,9 @@
 .navigationBar {
 	width: 	auto;
 	height: auto;
-	overflow: hidden;
 }
 
-.navigationLinksWrapper {
-	width: 3000000px;
-	height: 300000px;
-	background-color: rgba(0,0,0,0);
-	position: absolute;
-	transition: background-color 300ms ease;
-	-webkit-transition:background-color 300ms ease;
-	overflow: hidden;
-}
 
-.navigationLinksWrapperOpacity {
-	background-color: rgba(0,0,0,0.5);
-}
 
 .navigationLogoHeader{
 	width: 	100%;
@@ -76,9 +63,9 @@
 }
 
 .navigationLinksWrapper {
-	width: 3000000px;
-	height: 300000px;
-	background-color: rgba(0,0,0,0);
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,1);
 	position: absolute;
 	transition: background-color 300ms ease;
 	-webkit-transition:background-color 300ms ease;
@@ -87,7 +74,6 @@
 .navigationLinksWrapperOpacity {
 	background-color: rgba(0,0,0,0.5);
 }
-
 
 .navigationLinks {
 	overflow-y: scroll;
