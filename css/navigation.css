@@ -75,7 +75,6 @@
 	background-color: rgba(0,0,0,0.5);
 }
 
-
 .navigationLinks {
 	overflow-y: scroll;
 	width: 	  20em;
@@ -98,6 +97,8 @@
 	-webkit-transform: translate3d(0,0,0);
 	transform: translate3d(0,0,0);
 }
+
+
 
 .link {
 	width: 100%;
