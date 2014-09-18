@@ -67,6 +67,8 @@
 	position: absolute;
 	transition: background-color 300ms ease;
 	-webkit-transition:background-color 300ms ease;
+	z-index: 1;
+	cursor: pointer;
 }
 
 .navigationLinksWrapperOpacity {
@@ -89,6 +91,7 @@
 	z-index: 9;
 	text-align: right;
 	list-style: none;
+	cursor: auto;
 }
 
 .transitonNavigationLinks {
