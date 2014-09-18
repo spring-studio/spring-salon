@@ -49,6 +49,7 @@ function checkShouldNavFloat(){
 $(document).ready(function(){
 	$('#menuImg').click(function(){
 	  $nav.toggleClass('transitonNavigationLinks');
+	  $('.navigationLinksWrapper').toggleClass('navigationLinksWrapperOpacity');
 	});
 	
 	// animate submenues and arrow for mobile-width window
