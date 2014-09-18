@@ -3,7 +3,7 @@
 	//Set Map
 	function initialize() {
 		var myLatlng = new google.maps.LatLng(45.7977839,15.9530061);
-		var centerMap = new google.maps.LatLng(45.803385, 15.953190);
+		var centerMap = new google.maps.LatLng(45.803898, 15.952785);
 		var imagePath = 'http://www.jamesnew.co.uk/googlePin.png';
 		var mapOptions = {
 			zoom: 15,
@@ -20,9 +20,10 @@
 				'<h3 class="h3Kontakt">099 873 56 32</h3>'+
 				'<h4 class="h4Kontakt">Ili</h4>'+
 				'<h4 class="h4Kontakt">Slanjem E-maila</h4>'+
-				'<input type="text" name="Ime i Prezime" placeholder="Vaše ime i prezime" required>'+'<br/>'+
-				'<input type="tel" name="Broj mobitela" placeholder="Vaš kontakt broj" required>'+'<br/>'+
-				'<textarea name="Poruka" placeholder="Unesite Vašu poruku.."  required></textarea>'+'<br/>'+
+				'<input type="text" name="ime" placeholder="Vaše ime i prezime" required>'+'<br/>'+
+				'<input type="tel" name="mobitel" placeholder="Vaš kontakt broj" required>'+'<br/>'+
+				'<input type="email" name="email" placeholder="Vaš e-mail" required>'+'<br/>'+
+				'<textarea name="poruka" placeholder="Unesite Vašu poruku.."  required></textarea>'+'<br/>'+
 				'<input type="submit" value="Pošalji" class="submit" target="_blank"> '+		
 				'<h4 class="h4Kontakt">Gdje se nalazimo?</h3>'+
 				'<h3 class="h3Kontakt dobojskaMargin">Dobojska 28, Zagreb</h3>'+
