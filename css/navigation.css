@@ -181,6 +181,8 @@
 		background-color: transparent;
 		transition:none;
 		-webkit-transition:none;
+		z-index:auto;
+		cursor: auto;
 	}
 
 	.logoImgBox {width: 48%;}
