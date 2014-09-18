@@ -139,7 +139,9 @@
 	font-size:   0.9em;
 	list-style:  none;
 	z-index: 10;
-	box-shadow: 0px 2em 2em -3em rgba(0, 0, 0, 0.5) inset;
+	border-top: 1px solid rgba(0, 0, 0, 0.4);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+	background-color: rgba(0,0,0,0.02);
 
 }
 
@@ -250,6 +252,7 @@
 		text-indent: 1.5em;
 		width: 25em;
 		margin-top: 1em;
+		border: none;
 	}
 
 	.subMenu li:hover, .subMenu2 li:hover {
