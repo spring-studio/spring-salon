@@ -5,8 +5,10 @@
 	<meta charset="UTF-8"> 
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui" />
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/footer.css">
 	<link rel="stylesheet" type="text/css" href="css/navigation.css">
 	<link rel="stylesheet" type="text/css" href="css/sto_nudimo.css">
+	<link href='http://fonts.googleapis.com/css?family=Butterfly+Kids&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 </head>
@@ -15,74 +17,183 @@
 	<nav class="navigationBar">
 			<div class="navigationLogoHeader">
 				<div class="logoBox">
-					<img src="images/logo2.jpg" class="logoImg"></div>
-				<div class="menuImg"><img src="images/menu.svg" class="menuImg" id="menuImg"></div>
-				<div class="contactBox">Tel: 098 985 17 00<br/>E-mail: salon@gmail.com</div>
+					<div class="logoImgBox"><img src="images/cvijet.png" class="logoImg"></div>
+					<div class="logoTextBox"><p>spring</p></div>
+				</div>
+				<div class="menuImg" id="menuImg"></div>
 				<div class="clear"></div>
 			</div>
+
+		<div class="navigationLinksWrapper">
 			<ul class="navigationLinks">
-				<li class="link"><a href="#">Što nudimo?</a></li>
+				<li class="link"><a href="index.html" id="activeLink">Što nudimo?</a></li>
 				<li class="link">
-					<a href="#">Tretmani </a> <img src="images/arrow2.svg" class="arrow">
+					<a href="#">Tretmani</a> <img src="images/arrow2.svg" class="arrow">
 					<ul class="subMenu">
 						<li class="rombLi"><div class="romb"></div></li>
-						<li><a href="#">Njega stopala</a></li>
-						<li><a href="#">Njega ruku</a></li>
-						<li><a href="#">Masaže</a></li>
-						<li><a href="#">Termo deka</a></li>
-						<li><a href="#">Depilacije - žene</a></li>
-						<li><a href="#">Depilacije - muškarci</a></li>
-						<li><a href="#">Lice</a></li>
-						<li><a href="#">Njega leđa</a></li>
+						<li><a href="static/njega_stopala.html">Njega stopala</a></li>
+						<li><a href="static/njega_ruku.html">Njega ruku</a></li>
+						<li><a href="static/masaze.html">Masaže</a></li>
+						<li><a href="static/termo_deka.html">Termo deka</a></li>
+						<li><a href="static/depilacija_zene.html">Depilacije - žene</a></li>
+						<li><a href="static/depilacija_muski.html">Depilacije - muškarci</a></li>
+						<li><a href="static/lice.html">Lice</a></li>
+						<li><a href="static/njega_leda.html">Njega leđa</a></li>
 					</ul>
 				</li>
 				<li class="link"><a href="#">Wellness dan</a>
 					<img src="images/arrow2.svg" class="arrow2">
 					<ul class="subMenu2">
 						<li  class="rombLi"><div class="romb"></div></li>
-						<li><a href="#">Standard</a></li>
-						<li><a href="#">Exclusive</a></li>
-						<li><a href="#">Rođendan</a></li>
+						<li><a href="static/standard.html">Standard</a></li>
+						<li><a href="static/exclusive.html">Exclusive</a></li>
+						<li><a href="static/rodendan.html">Rođendan</a></li>
 					</ul>
 				</li>
-				<li class="link"><a href="#">O nama</a></li>
-				<li class="link"><a href="#">Kontakt</a></li>
+				<li class="link"><a href="static/kontakt.html">Kontakt</a></li>
 			</ul>
+		</div>
 	</nav>
 
 	<content class="content">
+			<div class="billboard"><div class="torn"></div></div>
 			<ul class="tretmaniList">
-				<a href="#"><li>Njega stopala</li></a>
-				<a href="#"><li>Njega ruku</li></a>
-				<a href="#"><li>Masaže</li></a>
-				<a href="#"><li>Termo deka</li></a>
-				<a href="#"><li>Depilacije - žene</li></a>
-				<a href="#"><li>Depilacije - muškarci</li></a>
-				<a href="#"><li>Lice</li></a>
-				<a href="#"><li>Njega leđa</li></a>
+			<h1>Tretmani koje nudimo</h1>
+				<li>
+					<a href="static/njega_stopala.html">
+						<figure>
+							<div class="imgBox feet"></div>
+							<figcaption>Njega stopala</figcaption>
+						</figure>
+					</a>
+				</li>
+				<li>
+					<a href="static/njega_ruku.html">
+						<figure>
+							<div class="imgBox hand"></div>
+							<figcaption>Njega ruku</figcaption>
+						</figure>
+					</a>
+				</li>
+				<li>
+					<a href="static/masaze.html">
+						<figure>
+							<div class="imgBox masaze"></div>
+							<figcaption>Masaže</figcaption>
+						</figure>
+					</a>
+				</li>
+				<li>
+					<a href="static/termo_deka.html">
+						<figure>
+							<div class="imgBox termo"></div>
+							<figcaption>Termo deka</figcaption>
+						</figure>
+					</a>
+				</li>
+				<li>
+					<a href="static/depilacija_zene.html">
+						<figure>
+							<div class="imgBox zene"></div>
+							<figcaption>Depilacija - žene</figcaption>
+						</figure>
+					</a>
+				</li>
+				<li>
+					<a href="static/depilacija_muski.html">
+						<figure>
+							<div class="imgBox muski"></div>
+							<figcaption>Depilacija - muškarci</figcaption>
+						</figure>
+					</a>
+				</li>
+				<li>
+					<a href="static/lice.html">
+						<figure>
+							<div class="imgBox lice"></div>
+							<figcaption>Lice</figcaption>
+						</figure>
+					</a>
+				</li>
+				<li>
+					<a href="static/njega_leda.html">
+						<figure>
+							<div class="imgBox leda"></div>
+							<figcaption>Njega leđa</figcaption>
+						</figure>
+					</a>
+				</li>
+			</ul>
+
+			<ul class="wellnessList">
+				<h1>Wellness paketi</h1>
+				<li>
+					<a href="static/standard.html">
+						<figure>
+							<div class="wellnessImgBox standard"></div>
+							<figcaption>Standard za dvije osobe</figcaption>
+						</figure>
+					</a>
+				</li>
+				<li>
+					<a href="static/exclusive.html">
+						<figure>
+							<div class="wellnessImgBox exclusive"></div>
+							<figcaption>Exclusive za dvije osobe</figcaption>
+						</figure>
+					</a>
+				</li>
+				<li>
+					<a href="static/rodendan.html">
+						<figure>
+							<div class="wellnessImgBox rodendan"></div>
+							<figcaption>Rođendan za četiri osobe</figcaption>
+						</figure>
+					</a>
+				</li>
 			</ul>
 	</content>
+	<footer>
+		<div class="footerBox">
+			<div class="infoBox">
+				<div class="infoBoxUl">
+					<ul>
+						<li><a href="https://www.facebook.com/pages/Spring-studio-za-njegu-lica-i-tijela/243270269209484">
+							<img src="images/facebook.svg">
+						</li>
+						<li class="facebookHover"><p>Svakodenevne ponude</p><p>pratite nas na facebook stranici</p></li></a>
+					</ul>
+				</div>
+				<div class="infoBoxUl right">
+					<ul>
+						<li class="imgRight"><img src="images/phone.svg"></li>
+						<li class="textLeft"><p>099 873 56 32</p><p>rezervirajte svoj tretman</p></li>
+					</ul>
+				</div>
+				<div class="infoBoxUl">
+					<ul>
+						<li ><img src="images/map.svg"></li>
+						<li><p>Dobojska 28, Zagreb</p><p>Croatia, 10000</p></li>
+					</ul>
+				</div>
+				<div class="infoBoxUl right">
+					<ul>
+						<li class="imgRight"><img src="images/clock.svg"></li>
+						<li class="textLeft"><p>10:00 - 20:00</p><p>ponedjeljak do petak</p></li>
+					</ul>
+				</div>
+		</div>
 
 
 
 
-<script type="text/javascript">
-	$('#menuImg').click(function(){
 
-	  $('.navigationLinks').toggleClass('transitonNavigationLinks');
-	
-	});
+		<div class="copyright"><p>©2014 Spring salon - kozmetički salon za njegu i održavanje tijela. Sva prava pridržana.</p></div>
+		</div>
+	</footer>
 
-	$('.arrow').click(function() {
-		$('.subMenu').toggleClass('transitionSubMenu');
-		$('.arrow').toggleClass('transitionArrow');
-	});
 
-	$('.arrow2').click(function() {
-		$('.subMenu2').toggleClass('transitionSubMenu');
-		$('.arrow2').toggleClass('transitionArrow');
-	});
-</script>
-
+<script type="text/javascript" src="js/navigation.js"></script>
+<script type="text/javascript" src="js/preloader.js"></script>
 </body>
 </html>

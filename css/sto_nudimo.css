@@ -1,32 +1,281 @@
+.billboard {
+	width: 100%;
+	height: 25em;
+	background: url('../images/billboard.jpg') no-repeat 40% 60%;
+	background-size: cover;
+}
+
+.torn {
+	height: 100%;
+	width: 100%;
+	background: url('../images/torn-paper.png') repeat-x center scroll transparent;
+	background-position: bottom;
+}
 .tretmaniList {
-	max-width: 85em;
+	max-width: 85%;
 	margin: auto;
-	display: border-box;
-	padding-top: 8em;
+	padding-top: 6em;
 	text-align: center;
 }
 
-.tretmaniList li {
-	border: 2px solid rgba(0,0,0,0.5);
-	border-radius: 25px;
-	width: 10em;
-	height: 10em;
-	display: inline-block;
-	margin-right: 3em;
-	margin-bottom: 3em;
-	transition:border 250ms ease;
+.tretmaniList h1 {
+	font-weight: normal;
+	text-transform: uppercase;
+	border-bottom: 1px solid #DDD;
+	padding-bottom: 0.5em;
+	margin: 0px auto 2em;
+	max-width: 20em;
+	color: #A1A1A1;
 }
 
-.tretmaniList li:last-child {
+.tretmaniList li {
+	display: inline-block;
+	width: 11em;
+	margin-bottom: 2em;
+}
+
+.tretmaniList li:last-child, .wellnessList li:last-child {
 	margin-right: none;
 }
 
-.tretmaniList li:hover {
-	border: 2px solid #c092c3;
+.tretmaniList a, .tretmaniList a:visited, .tretmaniList a:link, .wellnessList a, .wellnessList a:visited, .wellnessList a:link{
+	color: #000;
+	text-decoration: none;
+	text-transform: uppercase;
 }
+
+.tretmaniList a:hover, .wellnessList a:hover{
+	color: #c092c3;
+}
+
+.tretmaniList a:active, .tretmaniList a:focus, .wellnessList a:active, .wellnessList a:focus{
+	color: #c092c3;
+}
+
+.tretmaniList figure, .wellnessList figure {
+	width: auto;
+	height: auto;
+}
+
+.tretmaniList figcaption, .wellnessList figcaption {
+	text-align: center;
+	margin-top: 1em;
+}
+
+.imgBox {
+	border: 1px solid #7F7F7F;
+	border-radius: 25px;
+	width: 6em;
+	height: 6em;
+	margin: auto;
+}
+
+.imgBox:hover, .wellnessImgBox:hover {
+	border: 1px solid #c092c3;
+}
+
+.imgBox:active, .imgBox:focus, .wellnessImgBox:active, .wellnessImgBox:focus {
+	border: 1px solid #c092c3;
+}
+
+.wellnessList{
+	max-width: 85%;
+	margin: 3em auto 0 auto;
+	text-align: center;
+	list-style: none;
+}
+
+.wellnessList h1 {
+	font-weight: normal;
+	text-transform: uppercase;
+	border-bottom: 1px solid #DDD;
+	padding-bottom: 0.5em;
+	margin: 0px auto 2em;
+	max-width: 20em;
+	color: #A1A1A1;
+}
+
+.wellnessList li{
+	display: inline-block;
+	width: 15em;
+	margin-bottom: 2em;
+
+}
+
+.wellnessImgBox {
+	border: 1px solid #7F7F7F;
+	border-radius: 100px;
+	width: 10em;
+	height: 10em;
+	margin: auto;
+}
+
+.feet {
+	background: url('../images/feet.svg') no-repeat;
+	background-size: cover;
+	
+		   
+}
+
+.feet:hover, .feet:focus, .feet:active {
+	background: url('../images/feet_hover.svg') no-repeat;
+	background-size: cover;
+}
+
+.hand {
+	background: url('../images/hand.svg') no-repeat;
+	background-size: cover;
+	
+		   
+
+}
+
+.hand:hover, .hand:focus, .hand:active {
+	background: url('../images/hand_hover.svg') no-repeat;
+	background-size: cover;
+}
+
+.masaze {
+	background: url('../images/masaze.svg') no-repeat;
+	background-size: cover;
+	-
+		   
+
+}
+
+.masaze:hover, .masaze:focus, .masaze:active {
+	background: url('../images/masaze_hover.svg') no-repeat;
+	background-size: cover;
+}
+
+.zene {
+	background: url('../images/depilacija_zene.svg') no-repeat;
+	background-size: cover;
+	
+		   
+
+}
+
+.zene:hover, .zene:focus, .zene:active {
+	background: url('../images/depilacija_zene_hover.svg') no-repeat;
+	background-size: cover;
+}
+
+.muski {
+	background: url('../images/depilacija_muski.svg') no-repeat;
+	background-size: cover;
+	
+		   
+
+}
+
+.muski:hover, .muski:focus, .muski:active {
+	background: url('../images/depilacija_muski_hover.svg') no-repeat;
+	background-size: cover;
+}
+
+.termo {
+	background: url('../images/termo_deka.svg') no-repeat;
+	background-size: cover;
+	
+		   
+
+}
+
+.termo:hover, .termo:focus, .termo:active {
+	background: url('../images/termo_deka_hover.svg') no-repeat;
+	background-size: cover;
+}
+
+.lice {
+	background: url('../images/lice.svg') no-repeat;
+	background-size: cover;
+}
+
+.lice:hover, .lice:focus, .lice:active {
+	background: url('../images/lice_hover.svg') no-repeat;
+	background-size: cover;
+}
+
+.leda {
+	background: url('../images/njega_leda.svg') no-repeat;
+	background-size: cover;
+}
+
+.leda:hover, .leda:focus, .leda:active {
+	background: url('../images/njega_leda_hover.svg') no-repeat;
+	background-size: cover;
+}
+
+.standard {
+	background: url('../images/standard.svg') no-repeat;
+	background-size: cover;
+}
+
+.standard:hover, .standard:focus, .standard:active {
+	background: url('../images/standard_hover.svg') no-repeat;
+	background-size: cover;
+}
+
+.exclusive {
+	background: url('../images/exclusive.svg') no-repeat;
+	background-size: cover;
+}
+
+.exclusive:hover, .exclusive:focus, .exclusive:active {
+	background: url('../images/exclusive_hover.svg') no-repeat;
+	background-size: cover;
+}
+
+.rodendan {
+	background: url('../images/rodendan.svg') no-repeat;
+	background-size: cover;
+}
+
+.rodendan:hover, .rodendan:focus, .rodendan:active {
+	background: url('../images/rodendan_hover.svg') no-repeat;
+	background-size: cover;
+}
+
+
 
 @media all and (min-width: 750px) {
 	.tretmaniList {
-		padding-top: 15em;s
+		padding-top: 0;
+		max-width: 85em;
+		margin-top: 2.5em;
 	}
+
+	.tretmaniList li{
+		width: 13em;
+		margin-bottom: 3em;
+	}
+
+	.imgBox {
+		width: 10em;
+		height: 10em;
+	}
+	
+	.wellnessList {
+		max-width: 85em;
+	}
+
+	.wellnessImgBox {
+		width: 13em;
+		height: 13em;
+	}
+
+	.wellnessList li {
+		width: 23em;
+	}
+
+}
+
+@media all and (min-width:1440px){
+	.billboard {
+		height: 45em;
+		background: url('../images/billboard.jpg') no-repeat 100% 60%;
+		background-size: cover;
+	}
+}
 }

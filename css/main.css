@@ -7,6 +7,7 @@
 body {
 	font-size: 12px;
 	font-family:'Open sans';
+	background-color: #ffffff;
 	
 }
 
@@ -15,8 +16,18 @@ body {
 	height: auto;
 }
 
-
-
 .clear {
 	clear: both;
+}
+
+#activeLink {
+	color:#c092c3; 
+}
+
+.subMenu li:hover > #activeLink {
+	color: #ffffff;
+}
+
+.subMenu2 li:hover > #activeLink {
+	color: #ffffff;
 }
