@@ -1,6 +1,7 @@
 .navigationBar {
 	width: 	auto;
 	height: auto;
+	overflow: hidden;
 }
 
 .navigationLinksWrapper {
