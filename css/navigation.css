@@ -10,6 +10,7 @@
 	position: absolute;
 	transition: background-color 300ms ease;
 	-webkit-transition:background-color 300ms ease;
+	overflow: hidden;
 }
 
 .navigationLinksWrapperOpacity {
