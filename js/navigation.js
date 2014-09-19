@@ -7,17 +7,18 @@ var $nav = $('.navigationLinks');
 	jQuery.extend($nav, { isFixed : false, homeY : $nav.offset().top });
 
 
-
 function isMobileWidth(){
     return $(window).width() < 750;
 }
 
 function bindSubMenuClickEvent($subLink){
 	$subLink.isBound = true;
-	$subLink.click(function() {
+	$subLink.click(function(event) {
+		event.stopPropagation();
 		$subLink.arrow.toggleClass('transitionArrow');
 		$subLink.subMenu.toggleClass('transitionSubMenu');
 	});
+
 }
 
 function unbindSubMenuClickEvent($subLink){
@@ -46,6 +47,21 @@ function checkShouldNavFloat(){
 		}
 }
 
+function bindAllMobileEvents(){
+	bindSubMenuClickEvent($subLink1);
+	bindSubMenuClickEvent($subLink2);
+	// close the navigation if clicked outside 
+	 $('.navigationLinksWrapper').click(function(){
+	  $nav.toggleClass('transitonNavigationLinks');
+	  $('.navigationLinksWrapper').toggleClass('navigationLinksWrapperOpacity');
+	});
+
+}
+function unbindAllMobileEvents(){
+	unbindSubMenuClickEvent($subLink1);
+	unbindSubMenuClickEvent($subLink2);
+	$('.navigationLinksWrapper').unbind('click');
+}
 $(document).ready(function(){
 	$('#menuImg').click(function(){
 	  $nav.toggleClass('transitonNavigationLinks');
@@ -54,8 +70,7 @@ $(document).ready(function(){
 	
 	// animate submenues and arrow for mobile-width window
 	if (isMobileWidth() && !$subLink1.isBound){
-		bindSubMenuClickEvent($subLink1);
-		bindSubMenuClickEvent($subLink2);
+		bindAllMobileEvents();
 	}
 
 	//float the navigation on top upon scroll
@@ -69,8 +84,7 @@ $(window).resize(function(){
 		$subLink1.subMenu.css({position : ''});
 		$subLink2.subMenu.css({position : ''});
 		if (!$subLink1.isBound ){
-			bindSubMenuClickEvent($subLink1);
-			bindSubMenuClickEvent($subLink2);
+			bindAllMobileEvents();
 		}
 	}else{
 		if($w.scrollTop() > $nav.homeY ){
@@ -78,8 +92,7 @@ $(window).resize(function(){
 			$subLink2.subMenu.css({position : 'fixed'});
 		}
 		if ( $subLink1.isBound ){
-			unbindSubMenuClickEvent($subLink1);
-			unbindSubMenuClickEvent($subLink2);
+			unbindAllMobileEvents();
 		}
 	}
 
