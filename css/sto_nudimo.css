@@ -14,7 +14,6 @@
 .tretmaniList {
 	max-width: 85%;
 	margin: auto;
-	padding-top: 6em;
 	text-align: center;
 }
 
@@ -33,7 +32,6 @@
 	width: 11em;
 	margin-bottom: 2em;
 }
-
 .tretmaniList li:last-child, .wellnessList li:last-child {
 	margin-right: none;
 }
@@ -241,7 +239,6 @@
 
 @media all and (min-width: 750px) {
 	.tretmaniList {
-		padding-top: 0;
 		max-width: 85em;
 		margin-top: 2.5em;
 	}
