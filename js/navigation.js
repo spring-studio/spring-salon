@@ -14,7 +14,6 @@ function isMobileWidth(){
 function bindSubMenuClickEvent($subLink){
 	$subLink.isBound = true;
 	$subLink.click(function(event) {
-		event.stopPropagation();
 		$subLink.arrow.toggleClass('transitionArrow');
 		$subLink.subMenu.toggleClass('transitionSubMenu');
 	});
@@ -51,6 +50,9 @@ function bindAllMobileEvents(){
 	bindSubMenuClickEvent($subLink1);
 	bindSubMenuClickEvent($subLink2);
 	// close the navigation if clicked outside 
+	$nav.click(function(event){
+		event.stopPropagation();
+	});
 	 $('.navigationLinksWrapper').click(function(){
 	  $nav.toggleClass('transitonNavigationLinks');
 	  $('.navigationLinksWrapper').toggleClass('navigationLinksWrapperOpacity');
@@ -60,6 +62,7 @@ function bindAllMobileEvents(){
 function unbindAllMobileEvents(){
 	unbindSubMenuClickEvent($subLink1);
 	unbindSubMenuClickEvent($subLink2);
+	$nav.unbind('click');
 	$('.navigationLinksWrapper').unbind('click');
 }
 $(document).ready(function(){
