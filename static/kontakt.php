@@ -52,14 +52,34 @@
 						<li><a href="../static/rodendan.html">Rođendan</a></li>
 					</ul>
 				</li>
-				<li class="link"><a href="../static/kontakt.html" id="activeLink">Kontakt</a></li>
+				<li class="link"><a href="../static/kontakt.php" id="activeLink">Kontakt</a></li>
 			</ul>
 		</div>
 	</nav>
 	<content class="content">
+	<div id="mail_notif">
+			<?php 
+				$name = $_POST["ime"];
+				$number = $_POST["mobitel"];
+				$email = $_POST["email"];
+				$message = $_POST["poruka"];
+				$subject = "Upit sa weba";
+				$to = 'mirjamskarica@gmail.com';
+				
+				$body = " From: $name \n E-mail: $email \n Number: $number \n\n Message: $message";
+				if($_POST["submit"]){
+					if(mail($to, $subject, $body, $from)){
+						echo "<p>Vasa poruka je poslana</p>";
+					}else{
+						echo "<p>Ops, nesto je poslo po krivu </p>";
+					}
+				}
+			?>
+		</div>
 		<div id="map_canvas"></div>
 		<div id="googleMapsFormContentResponsive">
-			<form method="post" action="myform.php" enctype="text/plain" target="_blank"><h1 class="h1Kontakt">Dogovorite svoj termin</h1>
+			<form method="POST">
+				<h1 class="h1Kontakt">Dogovorite svoj termin</h1>
 				<h4 class="h4Kontakt">Preko telefona</h3>
 				<h3 class="h3Kontakt">099 873 56 32</h3>
 				<h4 class="h4Kontakt">Ili</h4>
@@ -68,7 +88,7 @@
 				<input type="tel" name="mobitel" placeholder="Vaš kontakt broj"  required><br/><br/>
 				<input type="email" name="email" placeholder="Vaš e-mail"  required><br/><br/>
 				<textarea name="poruka" placeholder="Unesite Vašu poruku.."  required></textarea><br/>
-				<input type="submit" name="submit" value="Pošalji" class="submit" target="_blank">  <br/><br/>
+				<input type="submit" name="submit" value="Pošalji" class="submit">  <br/><br/>
 				<h4 class="h4Kontakt">Gdje se nalazimo?</h3>
 				<h3 class="h3Kontakt zadnji">Dobojska 28, Zagreb</h3><br/>
 				<h4 class="h4Kontakt">radno vrijeme</h4>
