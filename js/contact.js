@@ -24,7 +24,7 @@
 				'<input type="tel" name="mobitel" placeholder="Vaš kontakt broj" required>'+'<br/>'+
 				'<input type="email" name="email" placeholder="Vaš e-mail" required>'+'<br/>'+
 				'<textarea name="poruka" placeholder="Unesite Vašu poruku.."  required></textarea>'+'<br/>'+
-				'<input type="submit" value="Pošalji" class="submit" name="submit> '+		
+				'<input type="submit" value="Pošalji" class="submit" name="submit"> '+		
 				'<h4 class="h4Kontakt">Gdje se nalazimo?</h3>'+
 				'<h3 class="h3Kontakt dobojskaMargin">Dobojska 28, Zagreb</h3>'+
 				'<h4 class="h4Kontakt">Radno vrijeme</h4>'+

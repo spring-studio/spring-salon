@@ -64,7 +64,7 @@
 				$email = $_POST["email"];
 				$message = $_POST["poruka"];
 				$subject = "Upit sa weba";
-				$to = 'mirjamskarica@gmail.com';
+				$to = 'nskarica1@gmail.com';
 				
 				$body = " From: $name \n E-mail: $email \n Number: $number \n\n Message: $message";
 				if($_POST["submit"]){
