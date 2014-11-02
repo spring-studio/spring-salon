@@ -12,6 +12,24 @@
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 </head>
+<style type="text/css">
+	.subMenu li span {
+		float: right;
+		margin-right: 10px;
+		background-image: url('images/feet_submenu.svg');
+		background-repeat: no-repeat;
+		width: 30px;
+		height: 30px;
+		background-size: cover;
+		margin-top: 2.5px;
+	}
+
+	.subMenu li:hover > span{
+		background-image: url('images/feet_submenu_hover.svg');
+	}
+
+
+</style>
 <body>
 
 	<nav class="navigationBar">
@@ -31,14 +49,14 @@
 					<a href="#">Tretmani</a> <img src="images/arrow2.svg" class="arrow">
 					<ul class="subMenu">
 						<li class="rombLi"><div class="romb"></div></li>
-						<li><a href="static/njega_stopala.html">Njega stopala</a></li>
-						<li><a href="static/njega_ruku.html">Njega ruku</a></li>
-						<li><a href="static/masaze.html">Masaže</a></li>
-						<li><a href="static/termo_deka.html">Termo deka</a></li>
-						<li><a href="static/depilacija_zene.html">Depilacije - žene</a></li>
-						<li><a href="static/depilacija_muski.html">Depilacije - muškarci</a></li>
-						<li><a href="static/lice.html">Lice</a></li>
-						<li><a href="static/njega_leda.html">Njega leđa</a></li>
+						<li><a href="static/njega_stopala.html">Njega stopala</a><span class="span"></span></li>
+						<li><a href="static/njega_ruku.html">Njega ruku</a><span class="span"></span></li>
+						<li><a href="static/masaze.html">Masaže</a><span class="span"></span></li>
+						<li><a href="static/termo_deka.html">Termo deka</a><span class="span"></span></li>
+						<li><a href="static/depilacija_zene.html">Depilacije - žene</a><span class="span"></span></li>
+						<li><a href="static/depilacija_muski.html">Depilacije - muškarci</a><span class="span"></span></li>
+						<li><a href="static/lice.html">Lice</a><span class="span"></span></li>
+						<li><a href="static/njega_leda.html">Njega leđa</a><span class="span"></span></li>
 					</ul>
 				</li>
 				<li class="link"><a href="#">Wellness dan</a>
