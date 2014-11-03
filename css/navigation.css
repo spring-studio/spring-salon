@@ -106,9 +106,7 @@
 
 }
 
-.navigationLinks a:hover, .navigationLinks a:active, .navigationLinks a:focus {
-	color: #B15AA8;
-}
+.navigationLinks a:hover, .navigationLinks a:active, .navigationLinks a:focus {color: #B15AA8;}
 
 .subMenu, .subMenu2 {
 	display: 	 none;
@@ -120,15 +118,9 @@
 
 }
 
-.transitionSubMenu{
-	display: block;
-}
+.transitionSubMenu{	display: block;}
 
-
-
-.subMenu li:first-child, .subMenu2 li:first-child{
-	padding-top:1em;
-}
+.subMenu li:first-child, .subMenu2 li:first-child{padding-top:1em;}
 
 .subMenu li:last-child, .subMenu2 li:last-child{
 	border-bottom: none;
@@ -150,6 +142,63 @@
 	transform:rotate(90deg);
 	-webkit-transform:rotate(90deg);
 }
+
+.subMenu li span, .subMenu2 li span {
+	float: left;
+	margin-left: 10px;
+	background-repeat: no-repeat;
+	width: 30px;
+	height: 30px;
+	background-size: cover;
+	margin-top: 2.5px;
+	opacity: 0.5;
+}
+
+.subMenu li:hover > span, .subMenu2 li:hover > span {opacity: 1;}
+
+.subMenu li:nth-child(2) span {background-image: url('../images/feet_submenu.svg');}
+.subMenu li:nth-child(3) span {background-image: url('../images/hand_submenu.svg');}
+.subMenu li:nth-child(4) span {background-image: url('../images/masaze_submenu.svg');}
+.subMenu li:nth-child(5) span {background-image: url('../images/termo_deka_submenu.svg');}
+.subMenu li:nth-child(6) span {background-image: url('../images/depilacija_zene_submenu.svg');}
+.subMenu li:nth-child(7) span {background-image: url('../images/depilacija_muski_submenu.svg');}
+.subMenu li:nth-child(8) span {background-image: url('../images/lice_submenu.svg');}
+.subMenu li:nth-child(9) span {background-image: url('../images/njega_leda_submenu.svg');}
+
+.subMenu li:nth-child(2):hover > span { background-image: url('../images/feet_submenu_purple.svg'); }
+.subMenu li:nth-child(3):hover > span { background-image: url('../images/hand_submenu_purple.svg'); }
+.subMenu li:nth-child(4):hover > span { background-image: url('../images/masaze_submenu_purple.svg'); }
+.subMenu li:nth-child(5):hover > span { background-image: url('../images/termo_deka_submenu_purple.svg'); }
+.subMenu li:nth-child(6):hover > span { background-image: url('../images/depilacija_zene_submenu_purple.svg'); }
+.subMenu li:nth-child(7):hover > span { background-image: url('../images/depilacija_muski_submenu_purple.svg'); }
+.subMenu li:nth-child(8):hover > span { background-image: url('../images/lice_submenu_purple.svg'); }
+.subMenu li:nth-child(9):hover > span { background-image: url('../images/njega_leda_submenu_purple.svg'); }
+
+.subMenu2 li:nth-child(2) span { background-image: url('../images/standard_submenu.svg'); }
+.subMenu2 li:nth-child(3) span { background-image: url('../images/exclusive_submenu.svg'); }
+.subMenu2 li:nth-child(4) span { background-image: url('../images/rodendan_submenu.svg'); }
+
+
+.subMenu2 li:nth-child(2):hover > span { background-image: url('../images/standard_submenu_purple.svg'); }
+.subMenu2 li:nth-child(3):hover > span { background-image: url('../images/exclusive_submenu_purple.svg'); }
+.subMenu2 li:nth-child(4):hover > span { background-image: url('../images/rodendan_submenu_purple.svg'); }
+
+.icon-2 span {background-image: url('../images/feet_submenu_purple.svg') !important;}
+.icon-3 span {background-image: url('../images/hand_submenu_purple.svg') !important;}
+.icon-4 span {background-image: url('../images/masaze_submenu_purple.svg') !important;}
+.icon-5 span {background-image: url('../images/termo_deka_submenu_purple.svg') !important;}
+.icon-6 span {background-image: url('../images/depilacija_zene_submenu_purple.svg') !important;}
+.icon-7 span {background-image: url('../images/depilacija_muski_submenu_purple.svg') !important;}
+.icon-8 span {background-image: url('../images/lice_submenu_purple.svg') !important;}
+.icon-9 span {background-image: url('../images/njega_leda_submenu_purple.svg') !important;}
+
+
+.icon-2_2 span { background-image: url('../images/standard_submenu_purple.svg') !important; }
+.icon-2_3 span { background-image: url('../images/exclusive_submenu_purple.svg') !important; }
+.icon-2_4 span { background-image: url('../images/rodendan_submenu_purple.svg') !important; }
+
+.subMenu-icon span {opacity: 1 !important;}
+
 
 @media all and (min-width: 750px){
 	
@@ -203,9 +252,7 @@
 		margin-top: 0;
 		border-top:none;
 	}
-	.link:last-child {
-		margin-right: 0;
-	}
+	.link:last-child {margin-right: 0;}
 
 	.navigationLinks a, .navigationLinks a:link, .navigationLinks a:visited {
 		margin-right:0;
@@ -228,18 +275,11 @@
 		color: #fff;
 	}
 
-	.subMenu li:first-child, .subMenu2 li:first-child{
-		padding-top:0;
-	}
+	.subMenu li:first-child, .subMenu2 li:first-child{padding-top:0;}
 
-	.link:hover > .subMenu{
-		display: block;
-		
-	}
+	.link:hover > .subMenu{	display: block;}
 
-	.link:hover > .subMenu2{
-		display: block;
-	}
+	.link:hover > .subMenu2{display: block;}
 
 	.link:hover > .arrow {
 		transform:rotate(90deg);
@@ -252,7 +292,6 @@
 		transform:rotate(90deg);
 		-webkit-transform:rotate(90deg);
 		opacity: 0.85;
-
 	}
 
 	.romb {
@@ -266,17 +305,11 @@
 		border-bottom-right-radius: 100em;
 	}
 
-	.rombLi:hover {
-		background-color: transparent !important;
-	}
+	.rombLi:hover {	background-color: transparent !important;	}
 
-	.subMenu li:hover > a, .subMenu2 li:hover > a  {
-		color: #fff;
-	}
+	.subMenu li:hover > a, .subMenu2 li:hover > a  {color: #fff;}
 
-	.menuPositionFixed {
-		position: fixed;
-	}
+	.menuPositionFixed {position: fixed;}
 
 	.arrow, .arrow2 {
 		float: none;
@@ -288,4 +321,17 @@
 		-webkit-transition: transform 200ms ease;
 	}
 
+	.subMenu li:nth-child(2):hover > span { background-image: url('../images/feet_submenu_hover.svg')!important; }
+	.subMenu li:nth-child(3):hover > span { background-image: url('../images/hand_submenu_hover.svg')!important ; }
+	.subMenu li:nth-child(4):hover > span { background-image: url('../images/masaze_submenu_hover.svg')!important; }
+	.subMenu li:nth-child(5):hover > span { background-image: url('../images/termo_deka_submenu_hover.svg')!important; }
+	.subMenu li:nth-child(6):hover > span { background-image: url('../images/depilacija_zene_submenu_hover.svg')!important; }
+	.subMenu li:nth-child(7):hover > span { background-image: url('../images/depilacija_muski_submenu_hover.svg') !important; }
+	.subMenu li:nth-child(8):hover > span { background-image: url('../images/lice_submenu_hover.svg')!important; }
+	.subMenu li:nth-child(9):hover > span { background-image: url('../images/njega_leda_submenu_hover.svg')!important; }
 
+	.subMenu2 li:nth-child(2):hover > span { background-image: url('../images/standard_submenu_hover.svg')!important; }
+	.subMenu2 li:nth-child(3):hover > span { background-image: url('../images/exclusive_submenu_hover.svg')!important; }
+	.subMenu2 li:nth-child(4):hover > span { background-image: url('../images/rodendan_submenu_hover.svg')!important; }
+
+}
