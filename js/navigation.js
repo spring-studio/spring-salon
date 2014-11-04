@@ -1,30 +1,30 @@
-var $w   = $(window);
-var $arrow1 = $('.arrow');
-	jQuery.extend($arrow1, { isBound : false, subMenu : $('.subMenu') });
-var $arrow2 = $('.arrow2');
-	jQuery.extend($arrow2, { isBound : false, subMenu : $('.subMenu2') });
+var $w = $(window);
+var $subLink1 = $('.linkTretmani');
+	jQuery.extend($subLink1, { isBound : false, arrow : $('.arrow'), subMenu : $('.subMenu') });
+var $subLink2 = $('.linkWellness');
+	jQuery.extend($subLink2, { isBound : false, arrow : $('.arrow2'), subMenu : $('.subMenu2') });
 var $nav = $('.navigationLinks');
 	jQuery.extend($nav, { isFixed : false, homeY : $nav.offset().top });
-
 
 
 function isMobileWidth(){
     return $(window).width() < 750;
 }
 
-function bindArrowClickEvent($arrow){
-	$arrow.isBound = true;
-	$arrow.click(function() {
-		$arrow.toggleClass('transitionArrow');
-		$arrow.subMenu.toggleClass('transitionSubMenu');
+function bindSubMenuClickEvent($subLink){
+	$subLink.isBound = true;
+	$subLink.click(function(event) {
+		$subLink.arrow.toggleClass('transitionArrow');
+		$subLink.subMenu.toggleClass('transitionSubMenu');
 	});
+
 }
 
-function unbindArrowClickEvent($arrow){
-	$arrow.isBound = false;
-	$arrow.unbind('click');
-	$arrow.removeClass('transitionArrow');
-	$arrow.subMenu.removeClass('transitionSubMenu');
+function unbindSubMenuClickEvent($subLink){
+	$subLink.isBound = false;
+	$subLink.unbind('click');
+	$subLink.arrow.removeClass('transitionArrow');
+	$subLink.subMenu.removeClass('transitionSubMenu');
 }
 
 function checkShouldNavFloat(){
@@ -34,27 +34,46 @@ function checkShouldNavFloat(){
 			$nav.css({position : 'fixed', top : 0});
 			$nav.isFixed = true;
 			if(!isMobileWidth()){
-				$arrow1.subMenu.css({position : 'fixed'});
-				$arrow2.subMenu.css({position : 'fixed'});
+				$subLink1.subMenu.css({position : 'fixed'});
+				$subLink2.subMenu.css({position : 'fixed'});
 			}
 		}
 		else if (!shouldBeFixed && $nav.isFixed ){
 			$nav.css({position : ''});
 			$nav.isFixed = false;
-			$arrow1.subMenu.css({position : ''});
-			$arrow2.subMenu.css({position : ''});
+			$subLink1.subMenu.css({position : ''});
+			$subLink2.subMenu.css({position : ''});
 		}
 }
 
+function bindAllMobileEvents(){
+	bindSubMenuClickEvent($subLink1);
+	bindSubMenuClickEvent($subLink2);
+	// close the navigation if clicked outside 
+	$nav.click(function(event){
+		event.stopPropagation();
+	});
+	 $('.navigationLinksWrapper').click(function(){
+	  $nav.toggleClass('transitonNavigationLinks');
+	  $('.navigationLinksWrapper').toggleClass('navigationLinksWrapperOpacity');
+	});
+
+}
+function unbindAllMobileEvents(){
+	unbindSubMenuClickEvent($subLink1);
+	unbindSubMenuClickEvent($subLink2);
+	$nav.unbind('click');
+	$('.navigationLinksWrapper').unbind('click');
+}
 $(document).ready(function(){
 	$('#menuImg').click(function(){
 	  $nav.toggleClass('transitonNavigationLinks');
+	  $('.navigationLinksWrapper').toggleClass('navigationLinksWrapperOpacity');
 	});
 	
 	// animate submenues and arrow for mobile-width window
-	if (isMobileWidth() && !$arrow1.isBound){
-		bindArrowClickEvent($arrow1);
-		bindArrowClickEvent($arrow2);
+	if (isMobileWidth() && !$subLink1.isBound){
+		bindAllMobileEvents();
 	}
 
 	//float the navigation on top upon scroll
@@ -65,20 +84,18 @@ $(document).ready(function(){
 $(window).resize(function(){
 	if (isMobileWidth()){
 		//fix the submenu navigation if needed
-		$arrow1.subMenu.css({position : ''});
-		$arrow2.subMenu.css({position : ''});
-		if (!$arrow1.isBound ){
-			bindArrowClickEvent($arrow1);
-			bindArrowClickEvent($arrow2);
+		$subLink1.subMenu.css({position : ''});
+		$subLink2.subMenu.css({position : ''});
+		if (!$subLink1.isBound ){
+			bindAllMobileEvents();
 		}
 	}else{
 		if($w.scrollTop() > $nav.homeY ){
-			$arrow1.subMenu.css({position : 'fixed'});
-			$arrow2.subMenu.css({position : 'fixed'});
+			$subLink1.subMenu.css({position : 'fixed'});
+			$subLink2.subMenu.css({position : 'fixed'});
 		}
-		if ( $arrow1.isBound ){
-			unbindArrowClickEvent($arrow1);
-			unbindArrowClickEvent($arrow2);
+		if ( $subLink1.isBound ){
+			unbindAllMobileEvents();
 		}
 	}
 

@@ -60,6 +60,20 @@
 	position: relative;
 }
 
+.navigationLinksWrapper {
+	background-color: rgba(0,0,0,0);
+	position: fixed;
+	transition: background-color 200ms ease;
+	-webkit-transition:background-color 200ms ease;
+	z-index: 1;
+	cursor: pointer;
+}
+
+.navigationLinksWrapperOpacity {
+	background-color: rgba(0,0,0,0.5);
+	width: 100%;
+	height: 100%;
+}
 
 .navigationLinks {
 	overflow-y: scroll;
@@ -76,15 +90,15 @@
 	z-index: 9;
 	text-align: right;
 	list-style: none;
-	overflow: hidden;
-
-
+	cursor: auto;
 }
 
 .transitonNavigationLinks {
 	-webkit-transform: translate3d(0,0,0);
 	transform: translate3d(0,0,0);
 }
+
+
 
 .link {
 	width: 100%;
@@ -116,15 +130,15 @@
 	font-size:   0.9em;
 	list-style:  none;
 	z-index: 10;
-	box-shadow: 0px 2em 2em -3em rgba(0, 0, 0, 0.5) inset;
+	border-top: 1px solid rgba(0, 0, 0, 0.4);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+	background-color: rgba(0,0,0,0.02);
 
 }
 
 .transitionSubMenu{
 	display: block;
 }
-
-
 
 .subMenu li:first-child, .subMenu2 li:first-child{
 	padding-top:1em;
@@ -160,7 +174,17 @@
 		border: none;
 	}
 
-	.navigationLinksWrapper{ min-height: 4.2em;}
+	.navigationLinksWrapper{ 
+		height: auto;
+		min-height: 4.2em;
+		width: auto;
+		position: static;
+		background-color: transparent;
+		transition:none;
+		-webkit-transition:none;
+		z-index:auto;
+		cursor: auto;
+	}
 
 	.logoImgBox {width: 48%;}
 
@@ -220,7 +244,8 @@
 		text-align: left;
 		text-indent: 1.5em;
 		width: 25em;
-		margin-top: 1em;	
+		margin-top: 1em;
+		border: none;
 	}
 
 	.subMenu li:hover, .subMenu2 li:hover {
