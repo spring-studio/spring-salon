@@ -20,14 +20,25 @@ body {
 	clear: both;
 }
 
-#activeLink {
+#activeLink{
 	color:#c092c3; 
 }
 
 .subMenu li:hover > #activeLink {
-	color: #ffffff;
+	color: #B15AA8;;
 }
 
 .subMenu2 li:hover > #activeLink {
-	color: #ffffff;
+	color: #B15AA8;;
 }
+
+@media all and (min-width:750px) {
+	.subMenu li:hover > #activeLink {
+		color: #ffffff;
+	}
+
+	.subMenu2 li:hover > #activeLink {
+		color: #ffffff;
+	}
+}
+

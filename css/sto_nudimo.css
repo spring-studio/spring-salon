@@ -44,7 +44,7 @@
 	text-transform: uppercase;
 }
 
-.tretmaniList a:hover, .wellnessList a:hover{
+.tretmaniList figure:hover, .wellnessList figure:hover{
 	color: #c092c3;
 }
 
@@ -70,7 +70,7 @@
 	margin: auto;
 }
 
-.imgBox:hover, .wellnessImgBox:hover {
+figure:hover .imgBox, figure:hover .wellnessImgBox {
 	border: 1px solid #c092c3;
 }
 
@@ -117,7 +117,7 @@
 		   
 }
 
-.feet:hover, .feet:focus, .feet:active {
+figure:hover .feet, figure:focus .feet, figure:active .feet {
 	background: url('../images/feet_hover.svg') no-repeat;
 	background-size: cover;
 }
@@ -130,7 +130,7 @@
 
 }
 
-.hand:hover, .hand:focus, .hand:active {
+figure:hover .hand, figure:focus .hand, figure:active .hand {
 	background: url('../images/hand_hover.svg') no-repeat;
 	background-size: cover;
 }
@@ -143,7 +143,7 @@
 
 }
 
-.masaze:hover, .masaze:focus, .masaze:active {
+figure:hover .masaze, figure:focus .masaze, figure:active .masaze {
 	background: url('../images/masaze_hover.svg') no-repeat;
 	background-size: cover;
 }
@@ -156,7 +156,7 @@
 
 }
 
-.zene:hover, .zene:focus, .zene:active {
+figure:hover .zene, figure:focus .zene, figure:active .zene {
 	background: url('../images/depilacija_zene_hover.svg') no-repeat;
 	background-size: cover;
 }
@@ -169,7 +169,7 @@
 
 }
 
-.muski:hover, .muski:focus, .muski:active {
+figure:hover .muski, figure:focus .muski, figure:active .muski {
 	background: url('../images/depilacija_muski_hover.svg') no-repeat;
 	background-size: cover;
 }
@@ -182,7 +182,7 @@
 
 }
 
-.termo:hover, .termo:focus, .termo:active {
+figure:hover .termo, figure:focus .termo, figure:active .termo {
 	background: url('../images/termo_deka_hover.svg') no-repeat;
 	background-size: cover;
 }
@@ -192,7 +192,7 @@
 	background-size: cover;
 }
 
-.lice:hover, .lice:focus, .lice:active {
+figure:hover .lice, figure:focus .lice, figure:active .lice{
 	background: url('../images/lice_hover.svg') no-repeat;
 	background-size: cover;
 }
@@ -202,7 +202,7 @@
 	background-size: cover;
 }
 
-.leda:hover, .leda:focus, .leda:active {
+figure:hover .leda, figure:focus .leda, figure:active .leda{
 	background: url('../images/njega_leda_hover.svg') no-repeat;
 	background-size: cover;
 }
@@ -212,7 +212,7 @@
 	background-size: cover;
 }
 
-.standard:hover, .standard:focus, .standard:active {
+figure:hover .standard, figure:focus .standard, figure:active .standard {
 	background: url('../images/standard_hover.svg') no-repeat;
 	background-size: cover;
 }
@@ -222,7 +222,7 @@
 	background-size: cover;
 }
 
-.exclusive:hover, .exclusive:focus, .exclusive:active {
+figure:hover .exclusive, figure:focus .exclusive, figure:active .exclusive {
 	background: url('../images/exclusive_hover.svg') no-repeat;
 	background-size: cover;
 }
@@ -232,7 +232,7 @@
 	background-size: cover;
 }
 
-.rodendan:hover, .rodendan:focus, .rodendan:active {
+figure:hover .rodendan, figure:focus .rodendan, figure:active .rodendan {
 	background: url('../images/rodendan_hover.svg') no-repeat;
 	background-size: cover;
 }
