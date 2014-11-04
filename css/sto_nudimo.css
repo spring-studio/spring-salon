@@ -35,7 +35,7 @@
 }
 
 .tretmaniList li:last-child, .wellnessList li:last-child {
-	margin-right: none;
+	margin-right: 0;
 }
 
 .tretmaniList a, .tretmaniList a:visited, .tretmaniList a:link, .wellnessList a, .wellnessList a:visited, .wellnessList a:link{
@@ -138,9 +138,6 @@ figure:hover .hand, figure:focus .hand, figure:active .hand {
 .masaze {
 	background: url('../images/masaze.svg') no-repeat;
 	background-size: cover;
-	-
-		   
-
 }
 
 figure:hover .masaze, figure:focus .masaze, figure:active .masaze {
@@ -240,6 +237,7 @@ figure:hover .rodendan, figure:focus .rodendan, figure:active .rodendan {
 
 
 @media all and (min-width: 750px) {
+	
 	.tretmaniList {
 		padding-top: 0;
 		max-width: 85em;
@@ -272,10 +270,11 @@ figure:hover .rodendan, figure:focus .rodendan, figure:active .rodendan {
 }
 
 @media all and (min-width:1440px){
+
 	.billboard {
 		height: 45em;
 		background: url('../images/billboard.jpg') no-repeat 100% 60%;
 		background-size: cover;
 	}
-}
+
 }
