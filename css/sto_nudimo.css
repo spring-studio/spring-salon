@@ -44,7 +44,7 @@
 	text-transform: uppercase;
 }
 
-.tretmaniList figure:hover, .wellnessList figure:hover{
+.tretmaniList a:hover, .wellnessList a:hover{
 	color: #c092c3;
 }
 
@@ -70,7 +70,7 @@
 	margin: auto;
 }
 
-figure:hover .imgBox, figure:hover .wellnessImgBox {
+.imgBox:hover, .wellnessImgBox:hover {
 	border: 1px solid #c092c3;
 }
 
@@ -117,7 +117,7 @@ figure:hover .imgBox, figure:hover .wellnessImgBox {
 		   
 }
 
-figure:hover .feet, figure:focus .feet, figure:active .feet {
+.feet:hover, .feet:focus, .feet:active {
 	background: url('../images/feet_hover.svg') no-repeat;
 	background-size: cover;
 }
@@ -130,7 +130,7 @@ figure:hover .feet, figure:focus .feet, figure:active .feet {
 
 }
 
-figure:hover .hand, figure:focus .hand, figure:active .hand {
+.hand:hover, .hand:focus, .hand:active {
 	background: url('../images/hand_hover.svg') no-repeat;
 	background-size: cover;
 }
@@ -143,7 +143,7 @@ figure:hover .hand, figure:focus .hand, figure:active .hand {
 
 }
 
-figure:hover .masaze, figure:focus .masaze, figure:active .masaze {
+.masaze:hover, .masaze:focus, .masaze:active {
 	background: url('../images/masaze_hover.svg') no-repeat;
 	background-size: cover;
 }
@@ -156,7 +156,7 @@ figure:hover .masaze, figure:focus .masaze, figure:active .masaze {
 
 }
 
-figure:hover .zene, figure:focus .zene, figure:active .zene {
+.zene:hover, .zene:focus, .zene:active {
 	background: url('../images/depilacija_zene_hover.svg') no-repeat;
 	background-size: cover;
 }
@@ -169,7 +169,7 @@ figure:hover .zene, figure:focus .zene, figure:active .zene {
 
 }
 
-figure:hover .muski, figure:focus .muski, figure:active .muski {
+.muski:hover, .muski:focus, .muski:active {
 	background: url('../images/depilacija_muski_hover.svg') no-repeat;
 	background-size: cover;
 }
@@ -182,7 +182,7 @@ figure:hover .muski, figure:focus .muski, figure:active .muski {
 
 }
 
-figure:hover .termo, figure:focus .termo, figure:active .termo {
+.termo:hover, .termo:focus, .termo:active {
 	background: url('../images/termo_deka_hover.svg') no-repeat;
 	background-size: cover;
 }
@@ -192,7 +192,7 @@ figure:hover .termo, figure:focus .termo, figure:active .termo {
 	background-size: cover;
 }
 
-figure:hover .lice, figure:focus .lice, figure:active .lice{
+.lice:hover, .lice:focus, .lice:active {
 	background: url('../images/lice_hover.svg') no-repeat;
 	background-size: cover;
 }
@@ -202,7 +202,7 @@ figure:hover .lice, figure:focus .lice, figure:active .lice{
 	background-size: cover;
 }
 
-figure:hover .leda, figure:focus .leda, figure:active .leda{
+.leda:hover, .leda:focus, .leda:active {
 	background: url('../images/njega_leda_hover.svg') no-repeat;
 	background-size: cover;
 }
@@ -212,7 +212,7 @@ figure:hover .leda, figure:focus .leda, figure:active .leda{
 	background-size: cover;
 }
 
-figure:hover .standard, figure:focus .standard, figure:active .standard {
+.standard:hover, .standard:focus, .standard:active {
 	background: url('../images/standard_hover.svg') no-repeat;
 	background-size: cover;
 }
@@ -222,7 +222,7 @@ figure:hover .standard, figure:focus .standard, figure:active .standard {
 	background-size: cover;
 }
 
-figure:hover .exclusive, figure:focus .exclusive, figure:active .exclusive {
+.exclusive:hover, .exclusive:focus, .exclusive:active {
 	background: url('../images/exclusive_hover.svg') no-repeat;
 	background-size: cover;
 }
@@ -232,7 +232,7 @@ figure:hover .exclusive, figure:focus .exclusive, figure:active .exclusive {
 	background-size: cover;
 }
 
-figure:hover .rodendan, figure:focus .rodendan, figure:active .rodendan {
+.rodendan:hover, .rodendan:focus, .rodendan:active {
 	background: url('../images/rodendan_hover.svg') no-repeat;
 	background-size: cover;
 }
