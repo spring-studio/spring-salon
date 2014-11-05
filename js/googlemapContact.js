@@ -15,7 +15,7 @@
 		//Callout Content
 		var contentString = 
 		'<div id="googleMapsFormContent">'+
-			'<form method="POST">'+'<h1 class="h1Kontakt">Dogovorite svoj termin</h1>'+
+			'<form id="googlemap_contact"  method="post" action="mail.php" enctype="text/plain">'+'<h1 class="h1Kontakt">Dogovorite svoj termin</h1>'+
 				'<h4 class="h4Kontakt">Preko telefona</h3>'+
 				'<h3 class="h3Kontakt">099 873 56 32</h3>'+
 				'<h4 class="h4Kontakt">Ili</h4>'+
@@ -25,6 +25,7 @@
 				'<input type="email" name="email" placeholder="Vaš e-mail" required>'+'<br/>'+
 				'<textarea name="poruka" placeholder="Unesite Vašu poruku.."  required></textarea>'+'<br/>'+
 				'<input type="submit" value="Pošalji" class="submit" name="submit"> '+		
+				'<div id="googlemap_responseMsg"> </div>'+
 				'<h4 class="h4Kontakt">Gdje se nalazimo?</h3>'+
 				'<h3 class="h3Kontakt dobojskaMargin">Dobojska 28, Zagreb</h3>'+
 				'<h4 class="h4Kontakt">Radno vrijeme</h4>'+
@@ -37,6 +38,12 @@
 			content: contentString,
 			maxWidth: 900
 		});
+
+		google.maps.event.addListener(infowindow, 'domready', function() {
+	      //bind mailer
+	      bindMailToForm('#googlemap_contact', '#googlemap_responseMsg');
+		});
+
 
 		//Add Marker
 		var marker = new google.maps.Marker({
