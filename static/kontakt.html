@@ -82,10 +82,6 @@
 	</content>
 
 
-	
-
-
-
 
 		<footer>
 		<div class="footerBox">
@@ -122,22 +118,6 @@
 	</footer>
 
 	<script type="text/javascript" src="../js/navigation.js"></script>
-	<script type="text/javascript">
-		// conditional loading of contact.js
-		(function(){
-			function isMobile(){ return 'ontouchstart' in document.documentElement; }
-
-			function loadContactJs(){
-				var element = document.createElement("script");
-				element.src = "../js/contact.js";
-				document.body.appendChild(element);
-			}
-			// load only if desktop
-			if( !isMobile()) loadContactJs();
-		})();
-		
-	</script>
 	<script type="text/javascript" src="../js/mail.js"></script>
-
 </body>
 </html>

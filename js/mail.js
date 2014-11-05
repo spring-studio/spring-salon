@@ -1,3 +1,16 @@
+// conditional loading of contact.js
+(function(){
+			function isMobile(){ return 'ontouchstart' in document.documentElement; }
+
+			function loadContactJs(){
+				var element = document.createElement("script");
+				element.src = "../js/googlemapContact.js";
+				document.body.appendChild(element);
+			}
+			// load only if desktop
+			if( !isMobile()) loadContactJs();
+})();
+
 function bindMailToForm(form_id, responseMsg_id){
 	var form_desktop = $(form_id);
 	var responseMsg = $(responseMsg_id);
@@ -35,6 +48,8 @@ function bindMailToForm(form_id, responseMsg_id){
 	});
 }
 
-bindMailToForm('#responsive_contact', '#responseMsg');
+ $(document).ready( function() {
+	bindMailToForm('#responsive_contact', '#responseMsg');
+});
 
 
