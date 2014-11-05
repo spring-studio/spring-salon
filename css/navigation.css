@@ -270,7 +270,7 @@
 		width: auto;
 		height: auto;
 		border: none;
-		text-indent: static;
+		text-indent: none;
 		line-height: 4em;
 	}
 
