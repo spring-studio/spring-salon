@@ -10,12 +10,11 @@
 	text-align: center;
 }
 
-#googlemap_responseMsg{min-height:22px;}
 
 .response-waiting {
     background:url('../images/loading.gif') no-repeat center;
   	margin: 0.3em;
-
+  	min-height:22px;
 }
  
 .response-success {
