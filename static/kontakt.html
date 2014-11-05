@@ -60,8 +60,7 @@
 	<content class="content">
 		<div id="map_canvas"></div>
 		<div id="googleMapsFormContentResponsive">
-		<div id="form-messages"></div>
-			<form id="ajax-contact-desktop"  method="post" action="mail.php" enctype="text/plain"><h1 class="h1Kontakt">Dogovorite svoj termin</h1>
+			<form id="responsive_contact"  method="post" action="mail.php" enctype="text/plain"><h1 class="h1Kontakt">Dogovorite svoj termin</h1>
 				<h4 class="h4Kontakt">Preko telefona</h3>
 				<h3 class="h3Kontakt">099 873 56 32</h3>
 				<h4 class="h4Kontakt">Ili</h4>
@@ -70,7 +69,9 @@
 				<input type="tel" name="broj" id="broj" placeholder="Vaš kontakt broj"  required><br/><br/>
 				<input type="email" id="email" name="email" placeholder="VaseIme@mail.com" required><br/><br/>
 				<textarea name="poruka" id="poruka" placeholder="Unesite Vašu poruku.."  required></textarea><br/>
-				<input type="submit" name="submit" id="submit" value="Pošalji" class="submit" target="_blank">  <br/><br/>
+				<input type="submit" name="submit" id="submit" value="Pošalji" class="submit"> 	
+				<div id="responseMsg"> <br/></div> <br/>
+
 				<h4 class="h4Kontakt">Gdje se nalazimo?</h3>
 				<h3 class="h3Kontakt zadnji">Dobojska 28, Zagreb</h3><br/>
 				<h4 class="h4Kontakt">radno vrijeme</h4>

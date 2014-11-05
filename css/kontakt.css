@@ -10,6 +10,19 @@
 	text-align: center;
 }
 
+.response-waiting {
+    background:url('../images/loading.gif') no-repeat center;
+  	margin: 0.3em;
+}
+ 
+.response-success {
+   color:green;
+}
+ 
+.response-error {
+  color:red;
+}
+
 input[type="text"], input[type="tel"], input[type="email"] {
 		max-width: 80%;
 		min-width: 80%;
