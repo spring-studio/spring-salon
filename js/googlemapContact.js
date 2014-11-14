@@ -1,4 +1,4 @@
- $(document).ready( function() {
+                                 $(document).ready( function() {
 	//Google Maps JS
 	//Set Map
 	function initialize() {
@@ -17,7 +17,8 @@
 		'<div id="googleMapsFormContent">'+
 			'<form id="googlemap_contact"  method="post" action="mail.php" enctype="text/plain">'+'<h1 class="h1Kontakt">Dogovorite svoj termin</h1>'+
 				'<h4 class="h4Kontakt">Preko telefona</h3>'+
-				'<h3 class="h3Kontakt">099 873 56 32</h3>'+
+				'<h3 class="h3Kontakt">098 99 47 231</h3>'+
+				'<h3 class="h3Kontakt">01 55 20 428</h3>'+
 				'<h4 class="h4Kontakt">Ili</h4>'+
 				'<h4 class="h4Kontakt">Slanjem E-maila</h4>'+
 				'<input type="text" name="ime" placeholder="Vaše ime i prezime" required>'+'<br/>'+
@@ -27,7 +28,7 @@
 				'<input type="submit" value="Pošalji" class="submit" name="submit"> '+		
 				'<div id="googlemap_responseMsg"> </div>'+
 				'<h4 class="h4Kontakt">Gdje se nalazimo?</h3>'+
-				'<h3 class="h3Kontakt dobojskaMargin">Dobojska 28, Zagreb</h3>'+
+				'<h3 class="h3Kontakt dobojskaMargin">Dobojska 5, Zagreb</h3>'+
 				'<h4 class="h4Kontakt">Radno vrijeme</h4>'+
 				'<h3 class="h3Kontakt">10:00 - 20:00</h3>'+
 				'<h5 class="h5Kontakt">ponedjeljak do subote</h5>'+
@@ -69,3 +70,4 @@
 
 	google.maps.event.addDomListener(window, 'load', initialize);
 });
+                            

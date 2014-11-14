@@ -1,4 +1,4 @@
-.footerBox {
+                                                                                                .footerBox {
 	width: 100%;
 	height: auto;
 	padding-top: 2em;
@@ -9,7 +9,7 @@
 
 .infoBox {
 	text-align: center;
-	width: 75%;
+	width: 100%;
 	margin: auto;
 }
 
@@ -42,6 +42,10 @@
 
 .infoBoxUl li:last-child p:first-child {
 	font-size: 1.4em;
+}
+
+.infoBoxUl li:last-child span:first-child {
+	font-size: 1.3em;
 }
 
 .infoBoxUl li:last-child p {
@@ -91,3 +95,7 @@
 }
 
 
+
+                            
+                            
+                            
