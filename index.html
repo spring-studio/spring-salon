@@ -10,7 +10,15 @@
 	<link rel="stylesheet" type="text/css" href="css/sto_nudimo.css">
 	<link href='http://fonts.googleapis.com/css?family=Butterfly+Kids&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="fancybox/source/fancybox.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+	<link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js"></script>
+	<script type="text/javascript" src="fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+	<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+	<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+	<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
 </head>
 <body>
 
@@ -152,6 +160,22 @@
 					</a>
 				</li>
 			</ul>
+			<ul class="kremeList">
+				<h1>Just</h1>
+				<h2>Kozmetika s kojom radimo<br>Proizvodi Just izrađeni su po strogim švicarskim normama uz tradicionalno poštivanje okoliša.</h2>
+				<li>
+					<a class="fancybox" rel="group" href="images/slika(1).jpg"><img src="images/compress/slika(1).jpg"></a>
+				</li>
+				<li>
+					<a class="fancybox" rel="group" href="images/slika(2).jpg"><img src="images/compress/slika(2).jpg"></a>
+				</li>
+				<li>
+					<a class="fancybox" rel="group" href="images/slika(3).jpg"><img src="images/compress/slika(3).jpg"></a>
+				</li>
+				<li>
+					<a class="fancybox" rel="group" href="images/slika(4).jpg"><img src="images/compress/slika(4).jpg"></a>
+				</li>
+			</ul>
 	</content>
 	<footer>
 		<div class="footerBox">
@@ -200,6 +224,21 @@
 
 <script type="text/javascript" src="js/navigation.js"></script>
 <script type="text/javascript" src="js/preloader.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('.fancybox').fancybox({
+            beforeShow: function() {
+                $('body').css({'overflow-y': 'hidden'});
+            },
+            afterClose: function() {
+                $('body').css({'overflow-y': 'visible'});
+            },
+            helpers: {
+                overlay: { locked: false }
+            }
+        });
+	});
+</script>
 </body>
 </html>
                             
