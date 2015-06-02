@@ -32,6 +32,8 @@
 				'<h4 class="h4Kontakt">Radno vrijeme</h4>'+
 				'<h3 class="h3Kontakt">10:00 - 20:00</h3>'+
 				'<h5 class="h5Kontakt">ponedjeljak do subote</h5>'+
+				'<h3 class="h3Kontakt">10:00 - 14:00</h3>'+
+				'<h5 class="h5Kontakt">subota</h5>'+
 		'</form>'+
 		'</div>';
 		//Set window width + content
