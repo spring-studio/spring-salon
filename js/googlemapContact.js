@@ -18,7 +18,6 @@
 			'<form id="googlemap_contact"  method="post" action="mail.php" enctype="text/plain">'+'<h1 class="h1Kontakt">Dogovorite svoj termin</h1>'+
 				'<h4 class="h4Kontakt">Preko telefona</h3>'+
 				'<h3 class="h3Kontakt">098 99 47 231</h3>'+
-				'<h3 class="h3Kontakt">01 55 20 428</h3>'+
 				'<h4 class="h4Kontakt">Ili</h4>'+
 				'<h4 class="h4Kontakt">Slanjem E-maila</h4>'+
 				'<input type="text" name="ime" placeholder="Vaše ime i prezime" required>'+'<br/>'+
