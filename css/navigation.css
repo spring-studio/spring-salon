@@ -255,7 +255,7 @@
 		transition: none;
 		-webkit-transition: none;
 		box-shadow: none;
-		overflow-y:hidden;
+		overflow-y:visible;
 		transform:none;
 		-webkit-transform:none;
 		border-bottom: 1px solid #c092c3;
