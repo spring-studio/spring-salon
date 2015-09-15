@@ -1,8 +1,9 @@
-Spring studio
+Spring Salon
 ===
  
 
-Web development repository for  Spring studio
+Web development repository for  Spring salon
 
-+ [facebook](https://www.facebook.com/pages/Spring-studio-za-njegu-lica-i-tijela/243270269209484?fref=ts)
-+ [web demo](//spring-studio.github.io/web/)
++ [web demo](https://springsalon.com.hr)
++ [facebook](https://www.facebook.com/pages/Spring-studio-za-njegu-lica-i-tijela)
+
