@@ -4,7 +4,7 @@
 	function initialize() {
 		var myLatlng = new google.maps.LatLng(45.7977839,15.9530061);
 		var centerMap = new google.maps.LatLng(45.803898, 15.952785);
-		var imagePath = 'http://www.jamesnew.co.uk/googlePin.png';
+		var imagePath = '//www.jamesnew.co.uk/googlePin.png';
 		var mapOptions = {
 			zoom: 15,
 			center: centerMap,
